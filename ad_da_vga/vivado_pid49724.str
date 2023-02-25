@@ -1,0 +1,2063 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 49724
+License: Customer
+
+Current time: 	Fri Feb 24 10:32:34 CST 2023
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 2560x1440
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 45 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	D:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	D:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	Travmly
+User home directory: C:/Users/Travmly
+User working directory: E:/Downloads/ad_da_hdmi-master/ad_da_vga
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2018.2
+RDI_DATADIR: D:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: D:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/Travmly/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/Travmly/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/Travmly/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	E:/Downloads/ad_da_hdmi-master/ad_da_vga/vivado.log
+Vivado journal file location: 	E:/Downloads/ad_da_hdmi-master/ad_da_vga/vivado.jou
+Engine tmp dir: 	E:/Downloads/ad_da_hdmi-master/ad_da_vga/.Xil/Vivado-49724-DESKTOP-CRQ4OKO
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2018.2
+XILINX_SDK: D:/Xilinx/SDK/2018.2
+XILINX_VIVADO: D:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	205 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 500 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 71 MB (+71647kb) [00:00:07]
+// [Engine Memory]: 498 MB (+370817kb) [00:00:07]
+// aL (ck): Older Project Version: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aL)
+// Opening Vivado Project: E:\Downloads\ad_da_hdmi-master\ad_da_vga\ad_da_vga.xpr. Version: Vivado v2017.4 
+// bx (ck):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+dismissDialog("Older Project Version"); // aL (ck)
+// Tcl Message: open_project E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 550 MB. GUI used memory: 43 MB. Current time: 2/24/23 10:32:36 AM CST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// [Engine Memory]: 594 MB (+73989kb) [00:00:13]
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 656 MB (+33770kb) [00:00:16]
+// Tcl Message: open_project E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'D:/aaadanpianji/competiton_two/ad_da_vga' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'. 
+// Tcl Message: INFO: [Project 1-230] Project 'ad_da_vga.xpr' upgraded for this version of Vivado. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 912.016 ; gain = 171.551 
+// Project name: ad_da_vga; location: E:/Downloads/ad_da_hdmi-master/ad_da_vga; part: xc7a35tfgg484-2
+// [Engine Memory]: 724 MB (+37200kb) [00:00:22]
+// Elapsed time: 11 seconds
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 78 MB (+3869kb) [00:00:24]
+// al (ck): Project Upgraded: addNotify
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceQtoS.ReportIPStatusInfoDialog_IGNORE, "Ignore"); // a (al)
+dismissDialog("Project Upgraded"); // al (ck)
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), ila_0 : ila_0 (ila_0.xci)]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), ila_0 : ila_0 (ila_0.xci)]", 6, false, false, false, false, false, true); // B (D, ck) - Double Click
+// [GUI Memory]: 83 MB (+1252kb) [00:00:30]
+// Elapsed time: 14 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 8); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, hs_ad_da.xdc]", 10, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, hs_ad_da.xdc]", 10, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("hs_ad_da.xdc", 638, 505); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 895, 524); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("hs_ad_da.xdc", 790, 679); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 860, 763); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("hs_ad_da.v", 623, 258); // ce (w, ck)
+selectCodeEditor("hs_ad_da.v", 408, 271); // ce (w, ck)
+selectCodeEditor("hs_ad_da.v", 554, 275); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("hs_ad_da.v", 510, 443); // ce (w, ck)
+selectCodeEditor("hs_ad_da.v", 253, 343); // ce (w, ck)
+selectCodeEditor("hs_ad_da.v", 253, 342, false, false, false, false, true); // ce (w, ck) - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 2); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v)]", 1); // B (D, ck)
+selectCodeEditor("hs_ad_da.v", 314, 110); // ce (w, ck)
+selectCodeEditor("hs_ad_da.v", 313, 110, false, false, false, false, true); // ce (w, ck) - Double Click
+// [GUI Memory]: 88 MB (+1215kb) [00:01:52]
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, hs_ad_da.xdc]", 13, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, hs_ad_da.xdc]", 13, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("hs_ad_da.xdc", 788, 425); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 833, 374); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 751 MB. GUI used memory: 55 MB. Current time: 2/24/23 10:34:21 AM CST
+selectCodeEditor("hs_ad_da.xdc", 792, 426); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 981, 484); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 910, 490); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 914, 393); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("hs_ad_da.xdc", 529, 281, false, true, false, false, false); // ce (w, ck) - Control Key
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'v'); // ce (w, ck)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 34 seconds
+selectCodeEditor("hs_ad_da.xdc", 559, 493); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 687, 541); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 532, 491); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 630, 515); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 548, 519); // ce (w, ck)
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 544, 493); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 544, 493, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 266, 197); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 266, 197, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'v'); // ce (w, ck)
+typeControlKey(null, null, 'z');
+selectCodeEditor("hs_ad_da.xdc", 273, 193); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 273, 193, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 263, 256); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 263, 256, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("hs_ad_da.xdc", 279, 252); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 278, 252, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'v'); // ce (w, ck)
+// Elapsed time: 66 seconds
+selectCodeEditor("hs_ad_da.xdc", 278, 402); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 278, 402, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 282, 436); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 282, 436, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 280, 457); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 280, 457, false, false, false, false, true); // ce (w, ck) - Double Click
+// [GUI Memory]: 93 MB (+247kb) [00:05:07]
+selectCodeEditor("hs_ad_da.xdc", 287, 407); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 287, 407, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 288, 442); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 286, 439, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 280, 470); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 280, 469, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 271, 588); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 271, 588, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 491, 513); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 495, 500); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 495, 500, false, false, false, false, true); // ce (w, ck) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hs_ad_da.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hs_ad_da.v", 1); // k (j, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("hs_ad_da.v", 203, 504); // ce (w, ck)
+selectCodeEditor("hs_ad_da.v", 203, 504, false, false, false, false, true); // ce (w, ck) - Double Click
+// [GUI Memory]: 98 MB (+554kb) [00:06:10]
+// Elapsed time: 78 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v)]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_da_wave_send : da_wave_send (da_wave_send.v)]", 3, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_da_wave_send : da_wave_send (da_wave_send.v)]", 3, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v)]", 2, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v), u_video_display : video_display (video_display.v)]", 5, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v), u_video_display : video_display (video_display.v)]", 5, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("video_display.v", 70, 131); // ce (w, ck)
+selectCodeEditor("video_display.v", 360, 121); // ce (w, ck)
+// Elapsed time: 25 seconds
+selectCodeEditor("video_display.v", 93, 559); // ce (w, ck)
+selectCodeEditor("video_display.v", 93, 559, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 34 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hs_ad_da.xdc", 2); // k (j, ck)
+// Elapsed time: 54 seconds
+selectCodeEditor("hs_ad_da.xdc", 455, 711); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 455, 711, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("hs_ad_da.xdc", 267, 677); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 278, 690); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 278, 691, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 20 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// [GUI Memory]: 104 MB (+345kb) [00:10:35]
+// Elapsed time: 57 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hs_ad_da.v", 1); // k (j, ck)
+selectCodeEditor("hs_ad_da.v", 192, 388); // ce (w, ck)
+selectCodeEditor("hs_ad_da.v", 191, 388, false, false, false, false, true); // ce (w, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v)]", 2, true); // B (D, ck) - Node
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v)]", 2); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v)]", 2, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("hdmi_colorbar_top.v", 223, 520); // ce (w, ck)
+selectCodeEditor("hdmi_colorbar_top.v", 224, 520); // ce (w, ck)
+selectCodeEditor("hdmi_colorbar_top.v", 209, 529); // ce (w, ck)
+selectCodeEditor("hdmi_colorbar_top.v", 209, 529, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 28 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v), u_rgb2dvi_0 : dvi_transmitter_top (dvi_transmitter_top.v)]", 7, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v), u_rgb2dvi_0 : dvi_transmitter_top (dvi_transmitter_top.v)]", 7, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("dvi_transmitter_top.v", 217, 498); // ce (w, ck)
+selectCodeEditor("dvi_transmitter_top.v", 217, 498, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("dvi_transmitter_top.v", 115, 255); // ce (w, ck)
+selectCodeEditor("dvi_transmitter_top.v", 115, 255, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("dvi_transmitter_top.v", 240, 244); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hs_ad_da.xdc", 2); // k (j, ck)
+selectCodeEditor("hs_ad_da.xdc", 281, 309); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 281, 309, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("hs_ad_da.xdc", 269, 245); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 270, 251); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 270, 254, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("hs_ad_da.xdc", 272, 250); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 272, 250, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, ck)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// C (ck): Settings: addNotify
+// [Engine Memory]: 784 MB (+24880kb) [00:12:00]
+// HMemoryUtils.trashcanNow. Engine heap size: 834 MB. GUI used memory: 75 MB. Current time: 2/24/23 10:44:26 AM CST
+setText(PAResourceQtoS.SettingsProjectGeneralPage_DEFAULT_LIBRARY, "xil_defaultlib"); // X (Q, C)
+// [Engine Memory]: 838 MB (+15970kb) [00:12:03]
+// Elapsed time: 11 seconds
+selectButton(PAResourceQtoS.SettingsProjectGeneralPage_CHOOSE_DEVICE_FOR_YOUR_PROJECT, (String) null); // q (a, C)
+// [GUI Memory]: 110 MB (+857kb) [00:12:14]
+// c (C): Select Device: addNotify
+setText("PAResourceEtoH.FPGAChooser_FPGA_TABLE_SEARCH_FIELD", "J18"); // OverlayTextField (G, c)
+setText("PAResourceEtoH.FPGAChooser_FPGA_TABLE_SEARCH_FIELD", "xc7z010clg400-1"); // OverlayTextField (G, c)
+selectTable(PAResourceEtoH.FPGAChooser_FPGA_TABLE, "xc7z010clg400-1 ; 400 ; 100 ; 17600 ; 35200 ; 60 ; 0 ; 80 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 2 ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 0, "100", 2); // v (O, c)
+selectTable(PAResourceEtoH.FPGAChooser_FPGA_TABLE, "xc7z010clg400-1 ; 400 ; 100 ; 17600 ; 35200 ; 60 ; 0 ; 80 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 2 ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 0, "100", 2, false, false, false, false, true); // v (O, c) - Double Click
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (c)
+dismissDialog("Select Device"); // c (C)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (C)
+// A (ck): Create New Run: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// b (ck): Create Run: addNotify
+dismissDialog("Create New Run"); // A (ck)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (b)
+// TclEventType: RUN_OPTIONS_MODIFIED
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_ADD
+// Tcl Command: 'set_property INCLUDE_IN_ARCHIVE [ get_property INCLUDE_IN_ARCHIVE [get_runs impl_1]] [get_runs impl_2]'
+// TclEventType: RUN_CURRENT
+// bx (ck):  Change Settings : addNotify
+// Tcl Message: ERROR: [Common 17-180] Spawn failed: No error 
+// Tcl Message: set_property flow {Vivado Implementation 2018} [get_runs impl_1] 
+// Tcl Message: create_run impl_2 -parent_run synth_1 -flow {Vivado Implementation 2018} -strategy {Vivado Implementation Defaults} -report_strategy {Vivado Implementation Default Reports} 
+// Tcl Message: Run is defaulting to parent run srcset: sources_1 Run is defaulting to parent run constrset: constrs_1 Run is defaulting to parent run part: xc7a35tfgg484-2 
+// Tcl Message: current_run [get_runs impl_2] 
+dismissDialog("Create Run"); // b (ck)
+// TclEventType: RUN_MODIFY
+// Tcl Message: set_property part xc7z010clg400-1 [current_project] 
+// TclEventType: RUN_MODIFY
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PART_MODIFIED
+// [GUI Memory]: 119 MB (+4494kb) [00:12:30]
+dismissDialog("Change Settings"); // bx (ck)
+dismissDialog("Settings"); // C (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (ck): Out-of-Context module run(s) is/are Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Out-of-Context module run(s) is/are Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run rom_256x8b_synth_1 
+// TclEventType: RUN_MODIFY
+// [GUI Memory]: 128 MB (+2803kb) [00:12:33]
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run sawt_rom_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run tri_rom_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run clk_wiz_0_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run dis_ram_synth_1 
+// A (ck): Run Synthesis: addNotify
+// Elapsed time: 52 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Run Synthesis"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (ck):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 8 
+// Tcl Message: [Fri Feb 24 10:45:54 2023] Launched rom_256x8b_synth_1, sawt_rom_synth_1, tri_rom_synth_1, clk_wiz_0_synth_1, dis_ram_synth_1... Run output will be captured here: rom_256x8b_synth_1: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/rom_256x8b_synth_1/runme.log sawt_rom_synth_1: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/sawt_rom_synth_1/runme.log tri_rom_synth_1: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/tri_rom_synth_1/runme.log clk_wiz_0_synth_1: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/clk_wiz_0_synth_1/runme.log dis_ram_synth_1: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/dis_ram_synth_1/runme.log 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Feb 24 10:45:55 2023] Launched synth_1... Run output will be captured here: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 57 seconds
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1942 ms to process. Increasing delay to 2000 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 879 MB. GUI used memory: 87 MB. Current time: 2/24/23 10:47:22 AM CST
+// Elapsed time: 125 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v)]", 2); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), ila_0 : ila_0 (ila_0.xci)]", 6); // B (D, ck)
+// A (ck): Show IP Hierarchy: addNotify
+dismissDialog("Show IP Hierarchy"); // A (ck)
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 283ms to process. Increasing delay to 2000 ms.
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 881 MB (+504kb) [00:16:16]
+// [GUI Memory]: 139 MB (+5033kb) [00:16:16]
+// [GUI Memory]: 150 MB (+4371kb) [00:16:16]
+// [GUI Memory]: 158 MB (+536kb) [00:16:21]
+// [Engine Memory]: 942 MB (+18482kb) [00:16:31]
+// HMemoryUtils.trashcanNow. Engine heap size: 942 MB. GUI used memory: 86 MB. Current time: 2/24/23 10:48:56 AM CST
+// TclEventType: RUN_COMPLETED
+// ah (ck): Synthesis Completed: addNotify
+// Elapsed time: 163 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (ck):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -jobs 8 
+// Tcl Message: [Fri Feb 24 10:50:50 2023] Launched impl_2... Run output will be captured here: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Implementation Completed: addNotify
+// Elapsed time: 203 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bx (ck):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_2 
+// [Engine Memory]: 1,027 MB (+39291kb) [00:21:50]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,028 MB. GUI used memory: 88 MB. Current time: 2/24/23 10:54:16 AM CST
+// [Engine Memory]: 1,126 MB (+49675kb) [00:21:55]
+// [Engine Memory]: 1,233 MB (+53534kb) [00:22:00]
+// [Engine Memory]: 1,330 MB (+36571kb) [00:22:05]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,338 MB. GUI used memory: 87 MB. Current time: 2/24/23 10:54:31 AM CST
+// [Engine Memory]: 1,465 MB (+72383kb) [00:22:20]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,481 MB. GUI used memory: 87 MB. Current time: 2/24/23 10:54:46 AM CST
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,761 MB. GUI used memory: 88 MB. Current time: 2/24/23 10:54:49 AM CST
+// [Engine Memory]: 1,761 MB (+233947kb) [00:22:24]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.4s
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 110 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.2 INFO: [Device 21-403] Loading part xc7z010clg400-1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.352 . Memory (MB): peak = 2027.738 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.352 . Memory (MB): peak = 2027.738 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 42 instances were transformed.   CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 36 instances   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 6 instances  
+// ExpRunCommands.openImplResults elapsed time: 39.1s
+// TclEventType: DRC_ADDED
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:42 ; elapsed = 00:00:38 . Memory (MB): peak = 2087.395 ; gain = 920.613 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [Engine Memory]: 1,883 MB (+35185kb) [00:22:30]
+// [GUI Memory]: 171 MB (+4297kb) [00:22:31]
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dP' command handler elapsed time: 46 seconds
+// [GUI Memory]: 185 MB (+6567kb) [00:22:36]
+// Elapsed time: 47 seconds
+dismissDialog("Open Implemented Design"); // bx (ck)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, -93553, 113381); // D (I, ck)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 54472, 280303); // D (I, ck)
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 678, 712, 1916, 946); // U (k, ck)
+// [GUI Memory]: 195 MB (+72kb) [00:22:44]
+// [GUI Memory]: 204 MB (+52kb) [00:24:29]
+// [GUI Memory]: 216 MB (+879kb) [00:32:45]
+// Elapsed time: 649 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 79668, 254714); // D (I, ck)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Fri Feb 24 11:05:56 2023] Launched impl_2... Run output will be captured here: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/runme.log 
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, ck)
+// bx (ck):  Reset to Previous Step : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_2 -prev_step  
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Reset to Previous Step"); // bx (ck)
+// [GUI Memory]: 240 MB (+14209kb) [00:33:36]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 32, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// bx (ck):  Auto Connect : addNotify
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2747.875 ; gain = 604.797 
+// Tcl Message: current_hw_device [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 2,477 MB (+523911kb) [00:33:45]
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0). 
+dismissDialog("Auto Connect"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,505 MB. GUI used memory: 152 MB. Current time: 2/24/23 11:06:12 AM CST
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null); // q (ak, bB)
+dismissFileChooser();
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bB (ck)
+// Elapsed time: 1769 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, ck)
+// bx (ck):  Reset to Previous Step : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run impl_2 -prev_step  
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Reset to Previous Step"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Fri Feb 24 11:35:53 2023] Launched impl_2... Run output will be captured here: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/runme.log 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,511 MB. GUI used memory: 158 MB. Current time: 2/24/23 11:36:12 AM CST
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 87 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.ltx} [get_hw_devices xc7z010_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.ltx} [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.bit} [get_hw_devices xc7z010_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s). 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}]] 
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,511 MB. GUI used memory: 166 MB. Current time: 2/24/23 11:37:28 AM CST
+// 'I' command handler elapsed time: 6 seconds
+dismissDialog("Program Device"); // bx (ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [GUI Memory]: 313 MB (+63989kb) [01:05:09]
+// PAPropertyPanels.initPanels (hw_ila_1) elapsed time: 0.3s
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "hw_ila_1 ; Idle", 5, "hw_ila_1", 0, false); // t (O, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,511 MB. GUI used memory: 153 MB. Current time: 2/24/23 11:37:46 AM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,511 MB. GUI used memory: 150 MB. Current time: 2/24/23 11:37:54 AM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 21 seconds
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "arm_dap_0 (0) ; N/A", 2, "arm_dap_0 (0)", 0, false); // t (O, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 32, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7z010_1"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.ltx} [get_hw_devices xc7z010_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.ltx} [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.bit} [get_hw_devices xc7z010_1] 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,511 MB. GUI used memory: 173 MB. Current time: 2/24/23 11:38:09 AM CST
+// Tcl Message: program_hw_devices [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s). INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// 'I' command handler elapsed time: 7 seconds
+dismissDialog("Program Device"); // bx (ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Elapsed time: 30 seconds
+closeFrame(RDIResource.WorkspaceDockingHolder_DOCKABLE_FRAME, "Waveform - hw_ila_1"); // Z (aq, ck)
+// Tcl Message: save_wave_config {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg} 
+selectButton(PAResourceTtoZ.TriggerStatusPanel_RUN_TRIGGER_FOR_THIS_ILA_CORE, "ILA_run_trigger"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-24 11:38:44 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-24 11:38:44 
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "hw_ila_1 ; Idle", 5, "hw_ila_1", 0, false, false, false, false, true, false); // t (O, ck) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_STOP_TRIGGER, "Stop Trigger"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_STOP_TRIGGER
+// HOptionPane Warning: 'There are no armed ILAs. (Stop Trigger)'
+selectButton("PAResourceQtoS.StopTrigger_THERE_NO_ARMED_ILAS_OK", "OK"); // JButton (A, G)
+selectButton(PAResourceCommand.PACommandNames_RUN_TRIGGER, "Hardware_run_trigger"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_TRIGGER
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}] 
+// Tcl Message: INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-24 11:38:50 
+// Tcl Message: wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}] 
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_GLASSPANE
+// Tcl Message: display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}]] 
+// Tcl Message: INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-24 11:38:50 INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // i
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081 
+// n (ck): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.ltx} [get_hw_devices xc7z010_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.ltx} [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.bit} [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7z010_1] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s). 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}]] 
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// 'I' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bx (ck)
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, ad_otr]", 0, false); // a (s, ck)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,511 MB. GUI used memory: 154 MB. Current time: 2/24/23 11:39:13 AM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, ad_otr]", 0, false); // a (s, ck)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xilinx_tcf/Digilent/210512180081 (2) ; Open", 1, "xilinx_tcf/Digilent/210512180081 (2)", 0, true); // t (O, ck) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "xc7z010_1 (2) ; Programmed", 3, "xc7z010_1 (2)", 0, true); // t (O, ck) - Node
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "XADC ;   ", 4, "XADC", 0, false); // t (O, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "video_display.v", 4); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "da_wave_send.v", 2); // k (j, ck)
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 18 seconds
+selectCodeEditor("da_wave_send.v", 1022, 432, false, false, true, false, false); // ce (w, ck) - Alt Key
+// Elapsed time: 11 seconds
+selectCodeEditor("da_wave_send.v", 1091, 270); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hs_ad_da.xdc", 1); // k (j, ck)
+selectCodeEditor("hs_ad_da.xdc", 285, 586); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 285, 586, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("hs_ad_da.xdc", 270, 616); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 270, 616, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("hs_ad_da.xdc", 272, 641); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 272, 641, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("hs_ad_da.xdc", 286, 711); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 286, 711, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("hs_ad_da.xdc", 278, 375); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 278, 375, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("hs_ad_da.xdc", 273, 431); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 273, 431, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("hs_ad_da.xdc", 399, 285); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 399, 285, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("hs_ad_da.xdc", 405, 138); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 405, 138, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("hs_ad_da.xdc", 314, 135); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 314, 135, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("hs_ad_da.xdc", 271, 135); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 271, 135, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("hs_ad_da.xdc", 456, 199); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 456, 199, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("hs_ad_da.xdc", 352, 197); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 352, 197, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 28 seconds
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "hw_ila_1 ; Idle", 5, "hw_ila_1", 0, false); // t (O, ck)
+selectTreeTable(PAResourceEtoH.HardwareTreePanel_HARDWARE_TREE_TABLE, "XADC ;   ", 4, "XADC", 0, false); // t (O, ck)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// Elapsed time: 10 seconds
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // i
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081 
+// n (ck): Close Hardware Target: addNotify
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cM, ck)
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Close Hardware Target"); // n (ck)
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.ltx} [get_hw_devices xc7z010_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.ltx} [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.bit} [get_hw_devices xc7z010_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s). 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}]] 
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bx (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hs_ad_da.v", 0); // k (j, ck)
+selectCodeEditor("hs_ad_da.v", 225, 726); // ce (w, ck)
+selectCodeEditor("hs_ad_da.v", 225, 726, false, false, false, false, true); // ce (w, ck) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_ila_1", 6); // k (j, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,511 MB. GUI used memory: 159 MB. Current time: 2/24/23 11:41:34 AM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 33, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7z010_1"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.ltx} [get_hw_devices xc7z010_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.ltx} [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.bit} [get_hw_devices xc7z010_1] 
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_DEVICE_UPDATE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,511 MB. GUI used memory: 156 MB. Current time: 2/24/23 11:41:45 AM CST
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: program_hw_devices [get_hw_devices xc7z010_1] 
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_ILA_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,511 MB. GUI used memory: 156 MB. Current time: 2/24/23 11:41:45 AM CST
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s). 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_GLASSPANE
+// TclEventType: HW_ILA_CHANGE
+// Tcl Message: INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "da_wave_send.v", 2); // k (j, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v), clk_wiz_0 : clk_wiz_0 (clk_wiz_0.xci)]", 3, false); // B (D, ck)
+selectTab(RDIResource.PropertiesView_TABBED_PANE, (HResource) null, "IP", 2); // i (c, ck)
+selectButton(PAResourceItoN.IPPropPanel_UPGRADE_VERSION, "Upgrade Version"); // al (Q, ck)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// ab (ck): Enable Core Container: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ab)
+dismissDialog("Enable Core Container"); // ab (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// Tcl Message: upgrade_ip -srcset clk_wiz_0 -vlnv xilinx.com:ip:clk_wiz:6.0 [get_ips  clk_wiz_0] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'clk_wiz_0' 
+// TclEventType: RUN_DELETE
+// bx (ck):  Upgrade IP : addNotify
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: LOAD_FEATURE
+// Tcl Message: INFO: [Project 1-386] Moving file 'E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' from fileset 'clk_wiz_0' to fileset 'sources_1'. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-1972] Upgraded clk_wiz_0 from Clocking Wizard 5.4 to Clocking Wizard 6.0 INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'... INFO: [Coretcl 2-1525] Wrote upgrade log to 'E:/Downloads/ad_da_hdmi-master/ad_da_vga/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips clk_wiz_0] -no_script -sync -force -quiet 
+dismissDialog("Upgrade IP"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), ila_0 : ila_0 (ila_0.xci)]", 10, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), ila_0 : ila_0 (ila_0.xci)]", 10, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectButton(PAResourceItoN.IPPropPanel_UPGRADE_VERSION, "Upgrade Version"); // al (Q, ck)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// ab (ck): Enable Core Container: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ab)
+dismissDialog("Enable Core Container"); // ab (ck)
+// Tcl Message: upgrade_ip -vlnv xilinx.com:ip:ila:6.2 [get_ips  ila_0] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'ila_0' 
+// bx (ck):  Upgrade IP : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-3422] Upgraded ila_0 (ILA (Integrated Logic Analyzer) 6.2) from revision 5 to revision 7 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'... INFO: [Coretcl 2-1525] Wrote upgrade log to 'E:/Downloads/ad_da_hdmi-master/ad_da_vga/ip_upgrade.log'. 
+// Tcl Message: upgrade_ip: Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 3009.312 ; gain = 76.836 
+// Tcl Message: export_ip_user_files -of_objects [get_ips ila_0] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// aI (ck): Generate Output Products: addNotify
+// Elapsed time: 26 seconds
+selectButton("PAResourceTtoZ.UpgradeIP_IP_UPGRADE_COMPLETED_OK", "OK"); // JButton (A, G)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bx (ck):  Managing Output Products : addNotify
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: generate_target all [get_files  E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/ila_0/ila_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ila_0'... INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'ila_0'... 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: catch { config_ip_cache -export [get_ips -all ila_0] } 
+// Tcl Message: export_ip_user_files -of_objects [get_files E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/ila_0/ila_0.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/ila_0/ila_0.xci] 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: launch_runs -jobs 8 ila_0_synth_1 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Fri Feb 24 11:42:53 2023] Launched ila_0_synth_1... Run output will be captured here: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/ila_0_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 23 seconds
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_OUT_OF_CONTEXT_MODULE_RUNS_WERE_LAUNCHED_OK", "OK"); // JButton (A, G)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v), u_rgb2dvi_0 : dvi_transmitter_top (dvi_transmitter_top.v)]", 6, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v), u_rgb2dvi_0 : dvi_transmitter_top (dvi_transmitter_top.v), serializer_g : serializer_10_to_1 (serializer_10_to_1.v)]", 12, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 24 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v), u_rgb2dvi_0 : dvi_transmitter_top (dvi_transmitter_top.v)]", 6, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v), u_video_driver : video_driver (video_driver.v)]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v), u_video_driver : video_driver (video_driver.v)]", 4, false); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v), u_rgb2dvi_0 : dvi_transmitter_top (dvi_transmitter_top.v)]", 6); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v), u_rgb2dvi_0 : dvi_transmitter_top (dvi_transmitter_top.v)]", 6, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v), u_rgb2dvi_0 : dvi_transmitter_top (dvi_transmitter_top.v)]", 6, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v), u_video_display : video_display (video_display.v)]", 5, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v), u_video_display : video_display (video_display.v)]", 5, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_da_wave_send : da_wave_send (da_wave_send.v)]", 16, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_rom_part : rom_part (rom_part.v)]", 17, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_ad_wave_rec : ad_wave_rec (ad_wave_rec.v)]", 18, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_ad_wave_rec : ad_wave_rec (ad_wave_rec.v)]", 18, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_ad_wave_rec : ad_wave_rec (ad_wave_rec.v)]", 18, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_rom_part : rom_part (rom_part.v)]", 17, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_rom_part : rom_part (rom_part.v)]", 17, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_rom_part : rom_part (rom_part.v), u_rom_256x8b : rom_256x8b (rom_256x8b.xci)]", 19, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_rom_part : rom_part (rom_part.v), u_rom_256x8b : rom_256x8b (rom_256x8b.xci)]", 19, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_rom_part : rom_part (rom_part.v), u_rom_256x8b : rom_256x8b (rom_256x8b.xci)]", 19, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// O (ck):  Re-customize IP : addNotify
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a35tfgg484-2 
+// TclEventType: IP_LOCK_CHANGE
+// r (ck): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // O (ck)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // aY (C, r)
+dismissDialog("Re-customize IP"); // r (ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_rom_part : rom_part (rom_part.v), u_rom_256x8b : rom_256x8b (rom_256x8b.xci)]", 19, false, false, false, false, true, false); // B (D, ck) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_rom_part : rom_part (rom_part.v), u_rom_256x8b : rom_256x8b (rom_256x8b.xci)]", 19, false); // B (D, ck)
+selectButton(PAResourceItoN.IPPropPanel_UPGRADE_VERSION, "Upgrade Version"); // al (Q, ck)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// ab (ck): Enable Core Container: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ab)
+dismissDialog("Enable Core Container"); // ab (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// bx (ck):  Upgrade IP : addNotify
+// TclEventType: RUN_DELETE
+// Tcl Message: upgrade_ip -srcset rom_256x8b -vlnv xilinx.com:ip:blk_mem_gen:8.4 [get_ips  rom_256x8b] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'rom_256x8b' 
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [Project 1-386] Moving file 'E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/rom_256x8b/rom_256x8b.xci' from fileset 'rom_256x8b' to fileset 'sources_1'. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated rom_256x8b to use current project options INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'rom_256x8b'... INFO: [Coretcl 2-1525] Wrote upgrade log to 'E:/Downloads/ad_da_hdmi-master/ad_da_vga/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips rom_256x8b] -no_script -sync -force -quiet 
+dismissDialog("Upgrade IP"); // bx (ck)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_rom_part : rom_part (rom_part.v), u_sawt_rom : sawt_rom (sawt_rom.xci)]", 20, false); // B (D, ck)
+selectButton(PAResourceItoN.IPPropPanel_UPGRADE_VERSION, "Upgrade Version"); // al (Q, ck)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// ab (ck): Enable Core Container: addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ab)
+dismissDialog("Enable Core Container"); // ab (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// bx (ck):  Upgrade IP : addNotify
+// Tcl Message: upgrade_ip -srcset sawt_rom -vlnv xilinx.com:ip:blk_mem_gen:8.4 [get_ips  sawt_rom] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'sawt_rom' 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// Tcl Message: INFO: [Project 1-386] Moving file 'E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/sawt_rom/sawt_rom.xci' from fileset 'sawt_rom' to fileset 'sources_1'. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated sawt_rom to use current project options INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'sawt_rom'... INFO: [Coretcl 2-1525] Wrote upgrade log to 'E:/Downloads/ad_da_hdmi-master/ad_da_vga/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips sawt_rom] -no_script -sync -force -quiet 
+dismissDialog("Upgrade IP"); // bx (ck)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_rom_part : rom_part (rom_part.v), u_tri_rom : tri_rom (tri_rom.xci)]", 21, false); // B (D, ck)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_rom_part : rom_part (rom_part.v), u_tri_rom : tri_rom (tri_rom.xci)]", 21, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_rom_part : rom_part (rom_part.v), u_tri_rom : tri_rom (tri_rom.xci)]", 21, false); // B (D, ck)
+selectButton(PAResourceItoN.IPPropPanel_UPGRADE_VERSION, "Upgrade Version"); // al (Q, ck)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// ab (ck): Enable Core Container: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ab)
+dismissDialog("Enable Core Container"); // ab (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// bx (ck):  Upgrade IP : addNotify
+// Tcl Message: upgrade_ip -srcset tri_rom -vlnv xilinx.com:ip:blk_mem_gen:8.4 [get_ips  tri_rom] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'tri_rom' 
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// Tcl Message: INFO: [Project 1-386] Moving file 'E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/tri_rom/tri_rom.xci' from fileset 'tri_rom' to fileset 'sources_1'. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated tri_rom to use current project options INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'tri_rom'... INFO: [Coretcl 2-1525] Wrote upgrade log to 'E:/Downloads/ad_da_hdmi-master/ad_da_vga/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips tri_rom] -no_script -sync -force -quiet 
+dismissDialog("Upgrade IP"); // bx (ck)
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v), u_video_display : video_display (video_display.v), u_dis_ram : dis_ram (dis_ram.xci)]", 6, false); // B (D, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceItoN.IPPropPanel_UPGRADE_VERSION, "Upgrade Version"); // al (Q, ck)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceItoN.IPPropPanel_UPGRADE_VERSION, "Upgrade Version"); // al (Q, ck)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// ab (ck): Enable Core Container: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ab)
+dismissDialog("Enable Core Container"); // ab (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// bx (ck):  Upgrade IP : addNotify
+// TclEventType: RUN_DELETE
+// Tcl Message: upgrade_ip -srcset dis_ram -vlnv xilinx.com:ip:blk_mem_gen:8.4 [get_ips  dis_ram] -log ip_upgrade.log 
+// Tcl Message: Upgrading 'dis_ram' 
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// Tcl Message: INFO: [Project 1-386] Moving file 'E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/dis_ram/dis_ram.xci' from fileset 'dis_ram' to fileset 'sources_1'. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated dis_ram to use current project options INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dis_ram'... INFO: [Coretcl 2-1525] Wrote upgrade log to 'E:/Downloads/ad_da_hdmi-master/ad_da_vga/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips dis_ram] -no_script -sync -force -quiet 
+dismissDialog("Upgrade IP"); // bx (ck)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: RUN_COMPLETED
+// [GUI Memory]: 330 MB (+1439kb) [01:12:58]
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: HW_OBJECT_DELETE
+// Elapsed time: 30 seconds
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_ila_1"); // i
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081 
+// n (ck): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081 
+// n (ck): Close Hardware Target: addNotify
+dismissDialog("Close Hardware Target"); // n (ck)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// Elapsed time: 25 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v), u_rgb2dvi_0 : dvi_transmitter_top (dvi_transmitter_top.v)]", 7); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("hs_ad_da.v", 116, 361); // ce (w, ck)
+selectCodeEditor("hs_ad_da.v", 116, 361, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("hs_ad_da.v", 93, 354); // ce (w, ck)
+selectCodeEditor("hs_ad_da.v", 93, 354, false, false, false, false, true); // ce (w, ck) - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v)]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v)]", 2, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// Elapsed time: 16 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_rom_part : rom_part (rom_part.v)]", 4); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v)]", 2); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v), u_video_driver : video_driver (video_driver.v)]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v), u_video_driver : video_driver (video_driver.v)]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v), u_video_display : video_display (video_display.v)]", 5, true); // B (D, ck) - Node
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v), u_video_display : video_display (video_display.v)]", 5); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v), u_video_display : video_display (video_display.v)]", 5, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v), u_video_display : video_display (video_display.v)]", 5, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// [GUI Memory]: 382 MB (+37413kb) [01:17:52]
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081 
+// n (ck): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// Elapsed time: 402 seconds
+dismissDialog("Close Hardware Target"); // n (ck)
+// Elapsed time: 407 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "video_driver.v", 9); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hs_ad_da.xdc", 2); // k (j, ck)
+// Elapsed time: 68 seconds
+selectCodeEditor("hs_ad_da.xdc", 729, 224); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 728, 226, false, false, false, false, true); // ce (w, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v)]", 2, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("hdmi_colorbar_top.v", 279, 543); // ce (w, ck)
+selectCodeEditor("hdmi_colorbar_top.v", 279, 542, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081 
+// n (ck): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081 
+// n (ck): Close Hardware Target: addNotify
+// Elapsed time: 426 seconds
+dismissDialog("Close Hardware Target"); // n (ck)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081 
+// n (ck): Close Hardware Target: addNotify
+dismissDialog("Close Hardware Target"); // n (ck)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,511 MB. GUI used memory: 182 MB. Current time: 2/24/23 12:11:48 PM CST
+// Elapsed time: 208 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, sawt_256x8b_wave.coe]", 8, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, sin_256x8b_wave.coe]", 9, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, sawt_256x8b_wave.coe]", 8, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, sin_256x8b_wave.coe]", 9, false); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v)]", 2); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v), u_video_display : video_display (video_display.v), u_dis_ram : dis_ram (dis_ram.xci)]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v), u_video_display : video_display (video_display.v), u_dis_ram : dis_ram (dis_ram.xci)]", 6, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v), u_video_display : video_display (video_display.v), u_dis_ram : dis_ram (dis_ram.xci)]", 6, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// r (ck): Re-customize IP: addNotify
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 3); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port B Options", 2); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // aY (C, r)
+dismissDialog("Re-customize IP"); // r (ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_rom_part : rom_part (rom_part.v)]", 9); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_rom_part : rom_part (rom_part.v), u_rom_256x8b : rom_256x8b (rom_256x8b.xci)]", 11, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_rom_part : rom_part (rom_part.v), u_rom_256x8b : rom_256x8b (rom_256x8b.xci)]", 11, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_rom_part : rom_part (rom_part.v), u_rom_256x8b : rom_256x8b (rom_256x8b.xci)]", 11, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// r (ck): Re-customize IP: addNotify
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Port A Options", 1); // aY (C, r)
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // aY (C, r)
+dismissDialog("Re-customize IP"); // r (ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_rom_part : rom_part (rom_part.v), u_sawt_rom : sawt_rom (sawt_rom.xci)]", 12, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_rom_part : rom_part (rom_part.v), u_sawt_rom : sawt_rom (sawt_rom.xci)]", 12, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// r (ck): Re-customize IP: addNotify
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Other Options", 2); // aY (C, r)
+dismissDialog("Re-customize IP"); // r (ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_rom_part : rom_part (rom_part.v), u_key_filter : key_filter (key_filter.v)]", 10, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_rom_part : rom_part (rom_part.v), u_key_filter : key_filter (key_filter.v)]", 10, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_rom_part : rom_part (rom_part.v)]", 9, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_rom_part : rom_part (rom_part.v)]", 9, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("rom_part.v", 273, 143); // ce (w, ck)
+selectCodeEditor("rom_part.v", 273, 142, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("rom_part.v", 154, 147); // ce (w, ck)
+selectCodeEditor("rom_part.v", 154, 147, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("rom_part.v", 172, 140); // ce (w, ck)
+selectCodeEditor("rom_part.v", 172, 140, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("rom_part.v", 128, 468); // ce (w, ck)
+selectCodeEditor("rom_part.v", 128, 468, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 50 seconds
+selectCodeEditor("rom_part.v", 319, 710); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("rom_part.v", 344, 582); // ce (w, ck)
+// Elapsed time: 1100 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, sawt_256x8b_wave.coe]", 13, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, sin_256x8b_wave.coe]", 14, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, tri_256x8b_wave.coe]", 15, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, sin_256x8b_wave.coe]", 14, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, sawt_256x8b_wave.coe]", 13, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), ila_0 : ila_0 (ila_0.xci)]", 11, false); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), ila_0 : ila_0 (ila_0.xci)]", 11); // B (D, ck)
+// A (ck): Show IP Hierarchy: addNotify
+dismissDialog("Show IP Hierarchy"); // A (ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hs_ad_da.v", 1); // k (j, ck)
+selectCodeEditor("hs_ad_da.v", 219, 679); // ce (w, ck)
+selectCodeEditor("hs_ad_da.v", 218, 679, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("hs_ad_da.v", 211, 702); // ce (w, ck)
+selectCodeEditor("hs_ad_da.v", 209, 702, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("hs_ad_da.v", 228, 523); // ce (w, ck)
+selectCodeEditor("hs_ad_da.v", 225, 523, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("hs_ad_da.v", 211, 584); // ce (w, ck)
+selectCodeEditor("hs_ad_da.v", 211, 583, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("hs_ad_da.v", 216, 747); // ce (w, ck)
+selectCodeEditor("hs_ad_da.v", 215, 746); // ce (w, ck)
+selectCodeEditor("hs_ad_da.v", 215, 746, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 136 seconds
+selectCodeEditor("hs_ad_da.v", 160, 196); // ce (w, ck)
+selectCodeEditor("hs_ad_da.v", 160, 196, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("hs_ad_da.v", 204, 460); // ce (w, ck)
+selectCodeEditor("hs_ad_da.v", 204, 460, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("hs_ad_da.v", 231, 728); // ce (w, ck)
+selectCodeEditor("hs_ad_da.v", 231, 728, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 95 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "da_wave_send.v", 3); // k (j, ck)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hs_ad_da.xdc", 2); // k (j, ck)
+selectCodeEditor("hs_ad_da.xdc", 271, 259); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 271, 259, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 17 seconds
+selectCodeEditor("hs_ad_da.xdc", 515, 419); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 601, 318); // ce (w, ck)
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 528, 411); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 538, 406); // ce (w, ck)
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'v'); // ce (w, ck)
+typeControlKey(null, null, 'z');
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 16 seconds
+selectCodeEditor("hs_ad_da.xdc", 779, 399); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 789, 382); // ce (w, ck)
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'v'); // ce (w, ck)
+// Elapsed time: 35 seconds
+selectCodeEditor("hs_ad_da.xdc", 808, 374); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("hs_ad_da.xdc", 837, 527); // ce (w, ck)
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'v'); // ce (w, ck)
+// Elapsed time: 65 seconds
+selectButton(PAResourceQtoS.StaleMoreAction_OUT_OF_DATE_DETAILS, "details"); // h (cM, ck)
+// Synthesis and Implementation Out-of-date Due to: show
+selectButton(PAResourceQtoS.StaleMoreAction_OUT_OF_DATE_DETAILS, "details"); // h (cM, ck)
+// Synthesis and Implementation Out-of-date Due to: show
+selectButton(RDIResource.HPopupTitle_CLOSE, (String) null); // k (n, ResizableWindow)
+// Synthesis and Implementation Out-of-date Due to: hide
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 8 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'tri_rom'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'sawt_rom'... 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'rom_256x8b'... INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dis_ram'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'... 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'... 
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: RUN_LAUNCH
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1395 ms. Increasing delay to 3000 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,511 MB. GUI used memory: 195 MB. Current time: 2/24/23 12:41:49 PM CST
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 569ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 436ms to process. Increasing delay to 3000 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// Elapsed time: 246 seconds
+selectButton(PAResourceItoN.NotificationManager_RUN_SUCCESSFULLY_COMPLETED, "dis_ram_synth_1"); // k (Q, ResizableWindow)
+// Run Command: PAResourceCommand.PACommandNames_DESIGN_RUNS_WINDOW
+selectButton(RDIResource.HPopupTitle_CLOSE, (String) null); // k (n, ResizableWindow)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 457ms to process. Increasing delay to 3000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_FAILED
+// ah (ck): Implementation Failed: addNotify
+// Elapsed time: 144 seconds
+dismissDialog("Implementation Failed"); // ah (ck)
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_2 ; constrs_1 ; place_design ERROR ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Fri Feb 24 12:45:10 CST 2023 ; 00:01:10 ; Vivado Implementation Defaults (Vivado Implementation 2018) ; Vivado Implementation Default Reports (Vivado Implementation 2018) ; xc7z010clg400-1 ; Default settings for Implementation.", 2, "constrs_1", 1, false); // ax (O, ck)
+// PAPropertyPanels.initPanels (impl_2) elapsed time: 0.2s
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_2 ; constrs_1 ; place_design ERROR ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Fri Feb 24 12:45:10 CST 2023 ; 00:01:10 ; Vivado Implementation Defaults (Vivado Implementation 2018) ; Vivado Implementation Default Reports (Vivado Implementation 2018) ; xc7z010clg400-1 ; Default settings for Implementation.", 2, "constrs_1", 1, false, false, false, false, false, true); // ax (O, ck) - Double Click
+selectTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "impl_2 ; constrs_1 ; place_design ERROR ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Fri Feb 24 12:45:10 CST 2023 ; 00:01:10 ; Vivado Implementation Defaults (Vivado Implementation 2018) ; Vivado Implementation Default Reports (Vivado Implementation 2018) ; xc7z010clg400-1 ; Default settings for Implementation.", 2, "impl_2", 0, false); // ax (O, ck)
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, false); // g (aQ, ck): FALSE
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // g (aQ, ck): FALSE
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, false); // g (aQ, ck): FALSE
+// Elapsed time: 25 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, ck) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, ck) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, ck)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// C (ck): Settings: addNotify
+dismissDialog("Settings"); // C (ck)
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw
+selectCodeEditor("hs_ad_da.xdc", 778, 408); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 778, 408, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("hs_ad_da.xdc", 509, 404); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 508, 404, false, false, false, false, true); // ce (w, ck) - Double Click
+// [GUI Memory]: 418 MB (+17069kb) [02:14:56]
+selectCodeEditor("hs_ad_da.xdc", 350, 403); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 350, 403, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("hs_ad_da.xdc", 403, 387); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 401, 388, false, false, false, false, true); // ce (w, ck) - Double Click
+// [GUI Memory]: 446 MB (+7285kb) [02:15:10]
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+// Elapsed time: 32 seconds
+selectCodeEditor("hs_ad_da.xdc", 345, 407); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 345, 407, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("hs_ad_da.xdc", 339, 466); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 339, 466, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("hs_ad_da.xdc", 349, 386); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 349, 386, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("hs_ad_da.xdc", 351, 407); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 351, 407, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 46 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_MESSAGES, "Messages"); // aw
+// Elapsed time: 25 seconds
+selectCodeEditor("hs_ad_da.xdc", 559, 372); // ce (w, ck)
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'c'); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 550, 127); // ce (w, ck)
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 553, 165); // ce (w, ck)
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 558, 193); // ce (w, ck)
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 552, 220); // ce (w, ck)
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 559, 140); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 559, 140, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 562, 160); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 558, 164); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 558, 164, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 544, 193); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 544, 192, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 548, 222); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 548, 222, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'v'); // ce (w, ck)
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Fri Feb 24 12:50:11 2023] Launched synth_1... Run output will be captured here: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1/runme.log [Fri Feb 24 12:50:11 2023] Launched impl_2... Run output will be captured here: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210512180081 
+// n (ck): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_FAILED
+// ah (ck): Implementation Failed: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// Elapsed time: 969 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (ck)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Common 17-55] 'set_property' expects at least one object. [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/constrs_1/imports/ad_da_vga/hs_ad_da.xdc:36]. ]", 9, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;E:\Downloads\ad_da_hdmi-master\ad_da_vga\ad_da_vga.srcs\constrs_1\imports\ad_da_vga\hs_ad_da.xdc;-;;-;16;-;line;-;36;-;;-;16;-;"); // ah (O, ck)
+selectCodeEditor("hs_ad_da.xdc", 538, 350); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 538, 350, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 144 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, [Common 17-55] 'get_property' expects at least one object. [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/.Xil/Vivado-39488-DESKTOP-CRQ4OKO/dbg_hub_CV.0/out/xsdbm.xdc:11]. ]", 12, true); // ah (O, ck) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;e:\Downloads\ad_da_hdmi-master\ad_da_vga\ad_da_vga.runs\impl_2\.Xil\Vivado-39488-DESKTOP-CRQ4OKO\dbg_hub_CV.0\out\xsdbm.xdc;-;;-;16;-;line;-;11;-;;-;16;-;"); // ah (O, ck)
+// ac (ck): Unable to Open File: addNotify
+selectButton(PAResourceOtoP.OpenFileAction_OK, "OK"); // a (ac)
+dismissDialog("Unable to Open File"); // ac (ck)
+selectCodeEditor("hs_ad_da.xdc", 725, 418); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 838, 436); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 706, 433); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 866, 338); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 834, 187); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 822, 186); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,511 MB. GUI used memory: 183 MB. Current time: 2/24/23 1:11:48 PM CST
+// Elapsed time: 1202 seconds
+selectCodeEditor("hs_ad_da.xdc", 901, 408); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 881, 325); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 79, 343); // ce (w, ck)
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 340, 404); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 340, 404, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'c'); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 282, 316); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 281, 316, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 548, 80); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 548, 80, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'c'); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 547, 63); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 547, 63, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'c'); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 278, 366); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 278, 366, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 861, 401); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 560, 72); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 553, 72); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 553, 72, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("hs_ad_da.xdc", 544, 49); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 544, 49, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'c'); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 270, 196); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 269, 196, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 548, 130); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 547, 110); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 547, 110, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'c'); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 284, 304); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 284, 304, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 552, 73); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 551, 73, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'c'); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 275, 332); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 275, 332, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 887, 165); // ce (w, ck)
+// Elapsed time: 16 seconds
+selectCodeEditor("hs_ad_da.xdc", 577, 342); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 5, 58); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 31, 72); // ce (w, ck)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 69 seconds
+selectCodeEditor("hs_ad_da.xdc", 565, 316); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 547, 311); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 562, 317); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 647, 300); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 627, 410); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 682, 518); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Fri Feb 24 13:31:22 2023] Launched synth_1... Run output will be captured here: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1/runme.log [Fri Feb 24 13:31:22 2023] Launched impl_2... Run output will be captured here: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/runme.log 
+// Elapsed time: 32 seconds
+selectCodeEditor("hs_ad_da.xdc", 564, 451); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 585, 414); // ce (w, ck)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_FAILED
+// ah (ck): Implementation Failed: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 2,511 MB. GUI used memory: 183 MB. Current time: 2/24/23 1:41:49 PM CST
+// Elapsed time: 928 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Netlist 29-177] Cannot set property 'BITSTREAM.CONFIG.CONFIGRATE' because the property does not exist. [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/constrs_1/imports/ad_da_vga/hs_ad_da.xdc:5]. ]", 8, true); // ah (O, ck) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;E:\Downloads\ad_da_hdmi-master\ad_da_vga\ad_da_vga.srcs\constrs_1\imports\ad_da_vga\hs_ad_da.xdc;-;;-;16;-;line;-;5;-;;-;16;-;"); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Common 17-55] 'set_property' expects at least one object. [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/constrs_1/imports/ad_da_vga/hs_ad_da.xdc:40]. ]", 9, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;E:\Downloads\ad_da_hdmi-master\ad_da_vga\ad_da_vga.srcs\constrs_1\imports\ad_da_vga\hs_ad_da.xdc;-;;-;16;-;line;-;40;-;;-;16;-;"); // ah (O, ck)
+selectCodeEditor("hs_ad_da.xdc", 541, 311); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 540, 311, false, false, false, false, true); // ce (w, ck) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Netlist 29-177] Cannot set property 'BITSTREAM.CONFIG.CONFIGRATE' because the property does not exist. [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/constrs_1/imports/ad_da_vga/hs_ad_da.xdc:5]. ]", 5, true); // ah (O, ck) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Netlist 29-177] Cannot set property 'BITSTREAM.CONFIG.CONFIGRATE' because the property does not exist. [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/constrs_1/imports/ad_da_vga/hs_ad_da.xdc:5]. ]", 5, true); // ah (O, ck) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;E:\Downloads\ad_da_hdmi-master\ad_da_vga\ad_da_vga.srcs\constrs_1\imports\ad_da_vga\hs_ad_da.xdc;-;;-;16;-;line;-;5;-;;-;16;-;"); // ah (O, ck)
+selectCodeEditor("hs_ad_da.xdc", 717, 199); // ce (w, ck)
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceItoN.MsgView_CLEAR_MESSAGES_RESULTING_FROM_USER_EXECUTED, "Messages_cleanUpMessages"); // B (f, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-99] Placer failed with error: 'IO Clock Placer failed'. Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.. ]", 13, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "ID;-;[Place 30-99];-;;-;16;-;DetailedMsg;-;The placer has failed due to a previously issued ERROR, CRITICAL WARNING, or WARNING.;-;;-;16;-;"); // ah (O, ck)
+// 'Place 30-99' Message Details: show
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 12, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, [Common 17-55] 'get_property' expects at least one object. [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/.Xil/Vivado-52200-DESKTOP-CRQ4OKO/dbg_hub_CV.0/out/xsdbm.xdc:11]. ]", 9, true); // ah (O, ck) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;e:\Downloads\ad_da_hdmi-master\ad_da_vga\ad_da_vga.runs\impl_2\.Xil\Vivado-52200-DESKTOP-CRQ4OKO\dbg_hub_CV.0\out\xsdbm.xdc;-;;-;16;-;line;-;11;-;;-;16;-;"); // ah (O, ck)
+// ac (ck): Unable to Open File: addNotify
+// Elapsed time: 68 seconds
+selectButton(PAResourceOtoP.OpenFileAction_OK, "OK"); // a (ac)
+dismissDialog("Unable to Open File"); // ac (ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 12, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-99] Placer failed with error: 'IO Clock Placer failed'. Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.. ]", 13, false); // ah (O, ck)
+// Elapsed time: 210 seconds
+selectButton(PAResourceQtoS.StaleMoreAction_OUT_OF_DATE_DETAILS, "details"); // h (cM, ck)
+// Synthesis and Implementation Out-of-date Due to: show
+selectButton(PAResourceQtoS.StaleMoreAction_OUT_OF_DATE_DETAILS, "details"); // h (cM, ck)
+selectButton(PAResourceQtoS.StaleMoreAction_OUT_OF_DATE_DETAILS, "details"); // h (cM, ck)
+// Synthesis and Implementation Out-of-date Due to: show
+selectButton(PAResourceQtoS.StaleMoreAction_OUT_OF_DATE_DETAILS, "details"); // h (cM, ck)
+// Synthesis and Implementation Out-of-date Due to: show
+// Elapsed time: 40 seconds
+selectButton((HResource) null, "hs_ad_da.xdc"); // h (Q, ResizableWindow)
+selectCodeEditor("hs_ad_da.xdc", 107, 39); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 676, 138); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Fri Feb 24 13:53:47 2023] Launched synth_1... Run output will be captured here: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1/runme.log [Fri Feb 24 13:53:47 2023] Launched impl_2... Run output will be captured here: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 87 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Common 17-55] 'set_property' expects at least one object. [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/constrs_1/imports/ad_da_vga/hs_ad_da.xdc:34]. ]", 2, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;E:\Downloads\ad_da_hdmi-master\ad_da_vga\ad_da_vga.srcs\constrs_1\imports\ad_da_vga\hs_ad_da.xdc;-;;-;16;-;line;-;34;-;;-;16;-;"); // ah (O, ck)
+selectCodeEditor("hs_ad_da.xdc", 730, 465); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 731, 464, false, false, false, false, true); // ce (w, ck) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Common 17-55] 'set_property' expects at least one object. [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/constrs_1/imports/ad_da_vga/hs_ad_da.xdc:34]. ]", 2, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Design Initialization, [Common 17-55] 'set_property' expects at least one object. [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/constrs_1/imports/ad_da_vga/hs_ad_da.xdc:34]. ]", 2, false, false, false, false, false, true); // ah (O, ck) - Double Click
+selectCodeEditor("hs_ad_da.xdc", 701, 472); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 748, 453); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 748, 453, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_FAILED
+// ah (ck): Implementation Failed: addNotify
+// Elapsed time: 31 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Place Design, [Place 30-99] Placer failed with error: 'IO Clock Placer failed'. Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.. ]", 9, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "ID;-;[Place 30-99];-;;-;16;-;DetailedMsg;-;The placer has failed due to a previously issued ERROR, CRITICAL WARNING, or WARNING.;-;;-;16;-;"); // ah (O, ck)
+// 'Place 30-99' Message Details: show
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 8, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 8, false); // ah (O, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, ck)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// C (ck): Settings: addNotify
+dismissDialog("Settings"); // C (ck)
+selectCodeEditor("hs_ad_da.xdc", 536, 139); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 253, 254); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 255, 254, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("hs_ad_da.xdc", 520, 283); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 551, 291); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 579, 308); // ce (w, ck)
+// Elapsed time: 43 seconds
+selectCodeEditor("hs_ad_da.xdc", 535, 183); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 813, 373); // ce (w, ck)
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'v'); // ce (w, ck)
+typeControlKey(null, null, 'z');
+selectCodeEditor("hs_ad_da.xdc", 790, 362); // ce (w, ck)
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 785, 529); // ce (w, ck)
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'v'); // ce (w, ck)
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("hs_ad_da.xdc", 728, 93); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 378, 105); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("hs_ad_da.xdc", 62, 180); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 0, 464, false, true, false, false, false); // ce (w, ck) - Control Key
+selectCodeEditor("hs_ad_da.xdc", 89, 477); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 46, 502); // ce (w, ck)
+typeControlKey((HResource) null, "hs_ad_da.xdc", 'v'); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 727, 423); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 759, 426); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 759, 426, false, false, false, false, true); // ce (w, ck) - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 30, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Fri Feb 24 13:57:58 2023] Launched synth_1... Run output will be captured here: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1/runme.log [Fri Feb 24 13:57:58 2023] Launched impl_2... Run output will be captured here: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/runme.log 
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_FAILED
+// ah (ck): Implementation Failed: addNotify
+// Elapsed time: 110 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (ck)
+selectCheckBox(PAResourceItoN.MsgView_CRITICAL_WARNINGS, (String) null, false); // g (aQ, ck): FALSE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 3, false); // ah (O, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, hs_ad_da.xdc]", 18, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, hs_ad_da.xdc]", 18, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, hs_ad_da.xdc]", 18, false); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hs_ad_da (hs_ad_da.v), u_hdmi_colorbar_top : hdmi_colorbar_top (hdmi_colorbar_top.v)]", 2); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 14); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 15); // B (D, ck)
+selectCodeEditor("hs_ad_da.xdc", 578, 109); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 799, 320); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 772, 207); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 330, 289); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 284, 262); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 284, 262, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("hs_ad_da.xdc", 423, 287); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 423, 287, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("hs_ad_da.xdc", 555, 293); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 556, 293, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("hs_ad_da.xdc", 554, 284); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 554, 284, false, false, false, false, true); // ce (w, ck) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 3, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, (String) null, 3, false, false, false, false, true, false); // ah (O, ck) - Popup Trigger
+// Elapsed time: 79 seconds
+selectCodeEditor("hs_ad_da.xdc", 1581, 440); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 751, 216); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 751, 215, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("hs_ad_da.xdc", 743, 250); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 743, 250, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("hs_ad_da.xdc", 489, 218); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 548, 264); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 548, 264, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 17 seconds
+selectCodeEditor("hs_ad_da.xdc", 755, 136); // ce (w, ck)
+selectCodeEditor("hs_ad_da.xdc", 755, 136, false, false, false, false, true); // ce (w, ck) - Double Click
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (O, ck)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// C (ck): Settings: addNotify
+selectButton(PAResourceQtoS.SettingsProjectGeneralPage_CHOOSE_DEVICE_FOR_YOUR_PROJECT, (String) null); // q (a, C)
+// c (C): Select Device: addNotify
+// [GUI Memory]: 490 MB (+23239kb) [03:30:03]

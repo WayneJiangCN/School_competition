@@ -1,0 +1,93 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Feb 24 14:03:34 2023
+# Process ID: 45520
+# Current directory: E:/Downloads/ad_da_hdmi-master/ad_da_vga
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent47392 E:\Downloads\ad_da_hdmi-master\ad_da_vga\ad_da_vga.xpr
+# Log file: E:/Downloads/ad_da_hdmi-master/ad_da_vga/vivado.log
+# Journal file: E:/Downloads/ad_da_hdmi-master/ad_da_vga\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+refresh_design
+refresh_design
+reset_run impl_2
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+reset_run impl_2 -prev_step 
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}]]
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+set_property PROBES.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {ad_data_IBUF} {ad_otr_IBUF} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}] -trigger_now
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}]]
+add_files -norecurse {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/key_filter.v E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/f_word_set.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+export_ip_user_files -of_objects  [get_files E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/key_filter.v] -no_script -reset -force -quiet
+remove_files  E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/key_filter.v
+add_files -norecurse E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/key_filter1.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+wait_on_run impl_2
+add_files -norecurse E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/key_filter1.v
+add_files -norecurse E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/key_filter1.v
+save_wave_config {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}

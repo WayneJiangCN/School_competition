@@ -1,0 +1,410 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Feb 24 14:03:34 2023
+# Process ID: 45520
+# Current directory: E:/Downloads/ad_da_hdmi-master/ad_da_vga
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent47392 E:\Downloads\ad_da_hdmi-master\ad_da_vga\ad_da_vga.xpr
+# Log file: E:/Downloads/ad_da_hdmi-master/ad_da_vga/vivado.log
+# Journal file: E:/Downloads/ad_da_hdmi-master/ad_da_vga\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 926.473 ; gain = 187.309
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+[Fri Feb 24 14:05:35 2023] Launched synth_1...
+Run output will be captured here: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1/runme.log
+[Fri Feb 24 14:05:35 2023] Launched impl_2...
+Run output will be captured here: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/runme.log
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: hs_ad_da
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1047.430 ; gain = 79.828
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'hs_ad_da' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/hs_ad_da.v:1]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_colorbar_top' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/hdmi_colorbar_top.v:24]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/.Xil/Vivado-45520-DESKTOP-CRQ4OKO/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/.Xil/Vivado-45520-DESKTOP-CRQ4OKO/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'video_driver' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/video_driver.v:24]
+	Parameter H_SYNC bound to: 11'b00000101000 
+	Parameter H_BACK bound to: 11'b00011011100 
+	Parameter H_DISP bound to: 11'b10100000000 
+	Parameter H_FRONT bound to: 11'b00001101110 
+	Parameter H_TOTAL bound to: 11'b11001110010 
+	Parameter V_SYNC bound to: 11'b00000000101 
+	Parameter V_BACK bound to: 11'b00000010100 
+	Parameter V_DISP bound to: 11'b01011010000 
+	Parameter V_FRONT bound to: 11'b00000000101 
+	Parameter V_TOTAL bound to: 11'b01011101110 
+INFO: [Synth 8-6155] done synthesizing module 'video_driver' (2#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/video_driver.v:24]
+INFO: [Synth 8-6157] synthesizing module 'video_display' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/video_display.v:24]
+	Parameter H_DISP bound to: 11'b10100000000 
+	Parameter V_DISP bound to: 11'b01011010000 
+INFO: [Synth 8-6157] synthesizing module 'dis_ram' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/.Xil/Vivado-45520-DESKTOP-CRQ4OKO/realtime/dis_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dis_ram' (3#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/.Xil/Vivado-45520-DESKTOP-CRQ4OKO/realtime/dis_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'video_display' (4#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/video_display.v:24]
+INFO: [Synth 8-6157] synthesizing module 'dvi_transmitter_top' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/dvi_transmitter_top.v:24]
+INFO: [Synth 8-6157] synthesizing module 'asyn_rst_syn' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/asyn_rst_syn.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'asyn_rst_syn' (5#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/asyn_rst_syn.v:24]
+INFO: [Synth 8-6157] synthesizing module 'dvi_encoder' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/dvi_encoder.v:21]
+	Parameter CTRLTOKEN0 bound to: 10'b1101010100 
+	Parameter CTRLTOKEN1 bound to: 10'b0010101011 
+	Parameter CTRLTOKEN2 bound to: 10'b0101010100 
+	Parameter CTRLTOKEN3 bound to: 10'b1010101011 
+INFO: [Synth 8-6155] done synthesizing module 'dvi_encoder' (6#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/dvi_encoder.v:21]
+INFO: [Synth 8-6157] synthesizing module 'serializer_10_to_1' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/serializer_10_to_1.v:26]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:31227]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2' (7#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:31227]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2__parameterized0' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:31227]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: SLAVE - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2__parameterized0' (7#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:31227]
+INFO: [Synth 8-6155] done synthesizing module 'serializer_10_to_1' (8#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/serializer_10_to_1.v:26]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:27289]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: TMDS_33 - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (9#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:27289]
+INFO: [Synth 8-6155] done synthesizing module 'dvi_transmitter_top' (10#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/dvi_transmitter_top.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_colorbar_top' (11#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/hdmi_colorbar_top.v:24]
+INFO: [Synth 8-6157] synthesizing module 'da_wave_send' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/da_wave_send.v:1]
+	Parameter FREQ_ADJ bound to: 8'b00000011 
+INFO: [Synth 8-6155] done synthesizing module 'da_wave_send' (12#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/da_wave_send.v:1]
+INFO: [Synth 8-6157] synthesizing module 'rom_part' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/rom_part.v:1]
+INFO: [Synth 8-6157] synthesizing module 'key_filter' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/key_filter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'key_filter' (13#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/key_filter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'rom_256x8b' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/.Xil/Vivado-45520-DESKTOP-CRQ4OKO/realtime/rom_256x8b_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rom_256x8b' (14#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/.Xil/Vivado-45520-DESKTOP-CRQ4OKO/realtime/rom_256x8b_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'sawt_rom' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/.Xil/Vivado-45520-DESKTOP-CRQ4OKO/realtime/sawt_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sawt_rom' (15#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/.Xil/Vivado-45520-DESKTOP-CRQ4OKO/realtime/sawt_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'tri_rom' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/.Xil/Vivado-45520-DESKTOP-CRQ4OKO/realtime/tri_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'tri_rom' (16#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/.Xil/Vivado-45520-DESKTOP-CRQ4OKO/realtime/tri_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rom_part' (17#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/rom_part.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ad_wave_rec' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_wave_rec.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ad_wave_rec' (18#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_wave_rec.v:1]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/hs_ad_da.v:78]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/.Xil/Vivado-45520-DESKTOP-CRQ4OKO/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (19#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/.Xil/Vivado-45520-DESKTOP-CRQ4OKO/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_0'. This will prevent further optimization [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/hs_ad_da.v:78]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_ad_wave_rec'. This will prevent further optimization [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/hs_ad_da.v:69]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_da_wave_send'. This will prevent further optimization [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/hs_ad_da.v:49]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_hdmi_colorbar_top'. This will prevent further optimization [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/hs_ad_da.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'hs_ad_da' (20#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/hs_ad_da.v:1]
+WARNING: [Synth 8-3331] design ad_wave_rec has unconnected port ad_data[7]
+WARNING: [Synth 8-3331] design ad_wave_rec has unconnected port ad_data[6]
+WARNING: [Synth 8-3331] design ad_wave_rec has unconnected port ad_data[5]
+WARNING: [Synth 8-3331] design ad_wave_rec has unconnected port ad_data[4]
+WARNING: [Synth 8-3331] design ad_wave_rec has unconnected port ad_data[3]
+WARNING: [Synth 8-3331] design ad_wave_rec has unconnected port ad_data[2]
+WARNING: [Synth 8-3331] design ad_wave_rec has unconnected port ad_data[1]
+WARNING: [Synth 8-3331] design ad_wave_rec has unconnected port ad_data[0]
+WARNING: [Synth 8-3331] design ad_wave_rec has unconnected port ad_otr
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1091.809 ; gain = 124.207
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1091.809 ; gain = 124.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1091.809 ; gain = 124.207
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/ila_0/ila_0.dcp' for cell 'ila_0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'u_hdmi_colorbar_top/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/dis_ram/dis_ram.dcp' for cell 'u_hdmi_colorbar_top/u_video_display/u_dis_ram'
+INFO: [Project 1-454] Reading design checkpoint 'e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/rom_256x8b/rom_256x8b.dcp' for cell 'u_rom_part/u_rom_256x8b'
+INFO: [Project 1-454] Reading design checkpoint 'e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/sawt_rom/sawt_rom.dcp' for cell 'u_rom_part/u_sawt_rom'
+INFO: [Project 1-454] Reading design checkpoint 'e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/tri_rom/tri_rom.dcp' for cell 'u_rom_part/u_tri_rom'
+INFO: [Netlist 29-17] Analyzing 81 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 1 OBUFs to IO ports without IO buffers.
+WARNING: [Opt 31-35] Removing redundant IBUF, u_hdmi_colorbar_top/clk_wiz_0/inst/clkin1_ibufg, from the path connected to top-level port: sys_clk 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'u_hdmi_colorbar_top/clk_wiz_0/clk_in1' is not directly connected to top level port. Synthesis is ignored for e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0.edf but preserved for implementation. [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0.edf:317]
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'ila_0/inst'
+Finished Parsing XDC File [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'ila_0/inst'
+Parsing XDC File [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_hdmi_colorbar_top/clk_wiz_0/inst'
+Finished Parsing XDC File [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_hdmi_colorbar_top/clk_wiz_0/inst'
+Parsing XDC File [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_hdmi_colorbar_top/clk_wiz_0/inst'
+Finished Parsing XDC File [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_hdmi_colorbar_top/clk_wiz_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hs_ad_da_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/hs_ad_da_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/constrs_1/imports/ad_da_vga/hs_ad_da.xdc]
+WARNING: [Vivado 12-584] No ports matched 'ad_otr'. [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/constrs_1/imports/ad_da_vga/hs_ad_da.xdc:42]
+Finished Parsing XDC File [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/constrs_1/imports/ad_da_vga/hs_ad_da.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/constrs_1/imports/ad_da_vga/hs_ad_da.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/hs_ad_da_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 36 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 36 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1473.426 ; gain = 505.824
+63 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:16 . Memory (MB): peak = 1473.426 ; gain = 505.824
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+[Fri Feb 24 14:11:51 2023] Launched synth_1...
+Run output will be captured here: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1/runme.log
+[Fri Feb 24 14:11:51 2023] Launched impl_2...
+Run output will be captured here: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/runme.log
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'ila_0/inst'
+Finished Parsing XDC File [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'ila_0/inst'
+Parsing XDC File [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_hdmi_colorbar_top/clk_wiz_0/inst'
+Finished Parsing XDC File [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_hdmi_colorbar_top/clk_wiz_0/inst'
+Parsing XDC File [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_hdmi_colorbar_top/clk_wiz_0/inst'
+Finished Parsing XDC File [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_hdmi_colorbar_top/clk_wiz_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hs_ad_da_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/hs_ad_da_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/constrs_1/imports/ad_da_vga/hs_ad_da.xdc]
+Finished Parsing XDC File [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/constrs_1/imports/ad_da_vga/hs_ad_da.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'ila_0/inst'
+Finished Parsing XDC File [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'ila_0/inst'
+Parsing XDC File [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_hdmi_colorbar_top/clk_wiz_0/inst'
+Finished Parsing XDC File [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_hdmi_colorbar_top/clk_wiz_0/inst'
+Parsing XDC File [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_hdmi_colorbar_top/clk_wiz_0/inst'
+Finished Parsing XDC File [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_hdmi_colorbar_top/clk_wiz_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hs_ad_da_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/hs_ad_da_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/constrs_1/imports/ad_da_vga/hs_ad_da.xdc]
+Finished Parsing XDC File [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/constrs_1/imports/ad_da_vga/hs_ad_da.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 1556.223 ; gain = 21.359
+reset_run impl_2
+reset_run synth_1
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+[Fri Feb 24 14:13:30 2023] Launched synth_1...
+Run output will be captured here: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1/runme.log
+[Fri Feb 24 14:13:30 2023] Launched impl_2...
+Run output will be captured here: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/runme.log
+reset_run impl_2 -prev_step 
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+[Fri Feb 24 14:16:08 2023] Launched impl_2...
+Run output will be captured here: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+set_property PROGRAM.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 2 ILA core(s).
+WARNING: [Labtools 27-1974] Mismatch between the design programmed into the device xc7z010_1 and the probes file(s) E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.ltx.
+The device design has 2 ILA core(s) and 0 VIO core(s). 1 ILA core(s) and 0 VIO core(s) are matched in the probes file(s).
+Resolution: 
+1. Reprogram device with the correct programming file and associated probes file(s) OR
+2. Goto device properties and associate the correct probes file(s) with the programming file already programmed in the device.
+set_property PROBES.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1
+
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+[Fri Feb 24 14:30:14 2023] Launched synth_1...
+Run output will be captured here: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1/runme.log
+[Fri Feb 24 14:30:14 2023] Launched impl_2...
+Run output will be captured here: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1
+
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+[Fri Feb 24 14:31:28 2023] Launched synth_1...
+Run output will be captured here: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1/runme.log
+[Fri Feb 24 14:31:28 2023] Launched impl_2...
+Run output will be captured here: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/runme.log
+set_property PROBES.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_wave -into {hw_ila_data_1.wcfg} -radix hex { {ad_data_IBUF} {ad_otr_IBUF} }
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-24 14:34:36
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-24 14:34:36
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-24 14:34:56
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-24 14:34:56
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-24 14:34:59
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-24 14:34:59
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-24 14:35:01
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-24 14:35:01
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}] -trigger_now
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2023-Feb-24 14:35:02
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2023-Feb-24 14:35:02
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+add_files -norecurse {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/key_filter.v E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/f_word_set.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1
+
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+[Fri Feb 24 14:46:38 2023] Launched synth_1...
+Run output will be captured here: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1/runme.log
+[Fri Feb 24 14:46:38 2023] Launched impl_2...
+Run output will be captured here: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1
+
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+[Fri Feb 24 14:48:43 2023] Launched synth_1...
+Run output will be captured here: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1/runme.log
+[Fri Feb 24 14:48:43 2023] Launched impl_2...
+Run output will be captured here: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1
+
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+[Fri Feb 24 14:51:17 2023] Launched synth_1...
+Run output will be captured here: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1/runme.log
+[Fri Feb 24 14:51:17 2023] Launched impl_2...
+Run output will be captured here: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/runme.log
+export_ip_user_files -of_objects  [get_files E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/key_filter.v] -no_script -reset -force -quiet
+remove_files  E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/key_filter.v
+add_files -norecurse E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/key_filter1.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1
+
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+[Fri Feb 24 14:53:48 2023] Launched synth_1...
+Run output will be captured here: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1/runme.log
+[Fri Feb 24 14:53:48 2023] Launched impl_2...
+Run output will be captured here: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/runme.log
+add_files -norecurse E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/key_filter1.v
+WARNING: [filemgmt 56-12] File 'E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/key_filter1.v' cannot be added to the project because it already exists in the project, skipping this file
+add_files -norecurse E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/key_filter1.v
+WARNING: [filemgmt 56-12] File 'E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/key_filter1.v' cannot be added to the project because it already exists in the project, skipping this file
+save_wave_config {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 24 14:55:56 2023...

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<probeData version="2" minor="2">
+  <probeset name="EDA_PROBESET" active="true">
+    <probe type="ila" busType="net" source="netlist" spec="ILA_DATA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="BSCAN_SWITCH_INDEX" value="0"/>
+        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="CORE_UUID" value="d7f66bbc62045aea8c9b20b797086963"/>
+        <Option Id="HUB_CLK_INPUT_FREQ_HZ" value="50000000"/>
+        <Option Id="HW_ILA" value="ila_0"/>
+        <Option Id="PROBE_PORT" value="0"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
+      </probeOptions>
+      <nets>
+        <net name="ad_otr_IBUF"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_DATA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="BSCAN_SWITCH_INDEX" value="0"/>
+        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="CORE_UUID" value="d7f66bbc62045aea8c9b20b797086963"/>
+        <Option Id="HUB_CLK_INPUT_FREQ_HZ" value="50000000"/>
+        <Option Id="HW_ILA" value="ila_0"/>
+        <Option Id="PROBE_PORT" value="1"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="8"/>
+      </probeOptions>
+      <nets>
+        <net name="ad_data_IBUF[7]"/>
+        <net name="ad_data_IBUF[6]"/>
+        <net name="ad_data_IBUF[5]"/>
+        <net name="ad_data_IBUF[4]"/>
+        <net name="ad_data_IBUF[3]"/>
+        <net name="ad_data_IBUF[2]"/>
+        <net name="ad_data_IBUF[1]"/>
+        <net name="ad_data_IBUF[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="net" source="netlist" spec="ILA_TRIGGER_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="BSCAN_SWITCH_INDEX" value="0"/>
+        <Option Id="CORE_LOCATION" value="1:0"/>
+        <Option Id="CORE_UUID" value="d7f66bbc62045aea8c9b20b797086963"/>
+        <Option Id="HUB_CLK_INPUT_FREQ_HZ" value="50000000"/>
+        <Option Id="HW_ILA" value="ila_0"/>
+        <Option Id="PROBE_PORT" value="2"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
+      </probeOptions>
+      <nets>
+        <net name="trigger"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="BSCAN_SWITCH_INDEX" value="0"/>
+        <Option Id="CORE_LOCATION" value="1:1"/>
+        <Option Id="CORE_UUID" value="472b2ccc2b5455b39a9cbc88be19cd86"/>
+        <Option Id="HUB_CLK_INPUT_FREQ_HZ" value="50000000"/>
+        <Option Id="HW_ILA" value="u_da_wave_send/u_f_word_set/ila_1"/>
+        <Option Id="PROBE_PORT" value="0"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="5"/>
+      </probeOptions>
+      <nets>
+        <net name="u_da_wave_send/u_f_word_set/fre_select[4]"/>
+        <net name="u_da_wave_send/u_f_word_set/fre_select[3]"/>
+        <net name="u_da_wave_send/u_f_word_set/fre_select[2]"/>
+        <net name="u_da_wave_send/u_f_word_set/fre_select[1]"/>
+        <net name="u_da_wave_send/u_f_word_set/fre_select[0]"/>
+      </nets>
+    </probe>
+    <probe type="ila" busType="bus" source="netlist" spec="ILA_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="BSCAN_SWITCH_INDEX" value="0"/>
+        <Option Id="CORE_LOCATION" value="1:1"/>
+        <Option Id="CORE_UUID" value="472b2ccc2b5455b39a9cbc88be19cd86"/>
+        <Option Id="HUB_CLK_INPUT_FREQ_HZ" value="50000000"/>
+        <Option Id="HW_ILA" value="u_da_wave_send/u_f_word_set/ila_1"/>
+        <Option Id="PROBE_PORT" value="1"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="11"/>
+      </probeOptions>
+      <nets>
+        <net name="u_da_wave_send/u_f_word_set/FREQ_CTRL[10]"/>
+        <net name="u_da_wave_send/u_f_word_set/FREQ_CTRL[9]"/>
+        <net name="u_da_wave_send/u_f_word_set/FREQ_CTRL[8]"/>
+        <net name="u_da_wave_send/u_f_word_set/FREQ_CTRL[7]"/>
+        <net name="u_da_wave_send/u_f_word_set/FREQ_CTRL[6]"/>
+        <net name="u_da_wave_send/u_f_word_set/FREQ_CTRL[5]"/>
+        <net name="u_da_wave_send/u_f_word_set/FREQ_CTRL[4]"/>
+        <net name="u_da_wave_send/u_f_word_set/FREQ_CTRL[3]"/>
+        <net name="u_da_wave_send/u_f_word_set/FREQ_CTRL[2]"/>
+        <net name="u_da_wave_send/u_f_word_set/FREQ_CTRL[1]"/>
+        <net name="u_da_wave_send/u_f_word_set/FREQ_CTRL[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="bus" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="ACTIVITY_VALUE" value=""/>
+        <Option Id="BSCAN_SWITCH_INDEX" value="0"/>
+        <Option Id="CORE_LOCATION" value="1:2"/>
+        <Option Id="CORE_UUID" value="3e84853640725514988ef94a9a327d34"/>
+        <Option Id="HUB_CLK_INPUT_FREQ_HZ" value="50000000"/>
+        <Option Id="HW_VIO" value="vio_0"/>
+        <Option Id="INPUT_VALUE" value=""/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="PROBE_PORT" value="0"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="1"/>
+      </probeOptions>
+      <nets>
+        <net name="vio_0/probe_in0[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_output" busType="bus" source="netlist" spec="VIO_OUTPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="BSCAN_SWITCH_INDEX" value="0"/>
+        <Option Id="CORE_LOCATION" value="1:2"/>
+        <Option Id="CORE_UUID" value="3e84853640725514988ef94a9a327d34"/>
+        <Option Id="HUB_CLK_INPUT_FREQ_HZ" value="50000000"/>
+        <Option Id="HW_VIO" value="vio_0"/>
+        <Option Id="OUTPUT_VALUE" value=""/>
+        <Option Id="OUTPUT_VALUE_RADIX" value="HEX"/>
+        <Option Id="PROBE_PORT" value="0"/>
+        <Option Id="PROBE_PORT_BITS" value="0"/>
+        <Option Id="PROBE_PORT_BIT_COUNT" value="13"/>
+      </probeOptions>
+      <nets>
+        <net name="Vio_freq_div[12]"/>
+        <net name="Vio_freq_div[11]"/>
+        <net name="Vio_freq_div[10]"/>
+        <net name="Vio_freq_div[9]"/>
+        <net name="Vio_freq_div[8]"/>
+        <net name="Vio_freq_div[7]"/>
+        <net name="Vio_freq_div[6]"/>
+        <net name="Vio_freq_div[5]"/>
+        <net name="Vio_freq_div[4]"/>
+        <net name="Vio_freq_div[3]"/>
+        <net name="Vio_freq_div[2]"/>
+        <net name="Vio_freq_div[1]"/>
+        <net name="Vio_freq_div[0]"/>
+      </nets>
+    </probe>
+  </probeset>
+</probeData>

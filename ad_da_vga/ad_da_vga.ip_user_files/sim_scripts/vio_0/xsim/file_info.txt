@@ -1,0 +1,2 @@
+vio_0.v,verilog,xil_defaultlib,../../../../ad_da_vga.srcs/sources_1/ip/vio_0/sim/vio_0.v,incdir="../../../../ad_da_vga.srcs/sources_1/ip/vio_0/hdl/verilog"incdir="../../../../ad_da_vga.srcs/sources_1/ip/vio_0/hdl"
+glbl.v,Verilog,xil_defaultlib,glbl.v

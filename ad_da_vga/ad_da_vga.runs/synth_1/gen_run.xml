@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1677314590">
+  <File Type="PA-TCL" Name="hs_ad_da.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="hs_ad_da_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="hs_ad_da_reports.tcl"/>
+  <File Type="RDS-RDS" Name="hs_ad_da.vds"/>
+  <File Type="RDS-UTIL" Name="hs_ad_da_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="hs_ad_da_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="hs_ad_da.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="hs_ad_da_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="hs_ad_da_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/ad_da_vga/ad_da_vga.srcs/asyn_rst_syn.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/asyn_rst_syn.v"/>
+        <Attr Name="ImportTime" Val="1645188769"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ad_da_vga/da_wave_send.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/da_wave_send.v"/>
+        <Attr Name="ImportTime" Val="1644408822"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ad_da_vga/ad_da_vga.srcs/dvi_encoder.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/dvi_encoder.v"/>
+        <Attr Name="ImportTime" Val="1645188769"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ad_da_vga/ad_da_vga.srcs/dvi_transmitter_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/dvi_transmitter_top.v"/>
+        <Attr Name="ImportTime" Val="1645188769"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/f_word_set.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ad_da_vga/ad_da_vga.srcs/f_word_set.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/f_word_set.v"/>
+        <Attr Name="ImportTime" Val="1677222324"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ad_da_vga/ad_da_vga.srcs/hdmi_colorbar_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/hdmi_colorbar_top.v"/>
+        <Attr Name="ImportTime" Val="1645188769"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ila_fre.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/key_f.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ad_da_vga/rom_part.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/rom_part.v"/>
+        <Attr Name="ImportTime" Val="1644460080"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ad_da_vga/ad_da_vga.srcs/serializer_10_to_1.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/serializer_10_to_1.v"/>
+        <Attr Name="ImportTime" Val="1645188769"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ad_da_vga/ad_da_vga.srcs/video_display.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/video_display.v"/>
+        <Attr Name="ImportTime" Val="1645188769"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ad_da_vga/ad_da_vga.srcs/video_driver.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PSRCDIR/video_driver.v"/>
+        <Attr Name="ImportTime" Val="1645188769"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ad_da_vga/hs_ad_da.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/hs_ad_da.v"/>
+        <Attr Name="ImportTime" Val="1644408847"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ad_da_vga/ad_wave_rec.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/ad_wave_rec.v"/>
+        <Attr Name="ImportTime" Val="1644408828"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/key_filter2.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ad_da_vga/sin_256x8b_wave.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/sin_256x8b_wave.coe"/>
+        <Attr Name="ImportTime" Val="1645188769"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ad_da_vga/sawt_256x8b_wave.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/sawt_256x8b_wave.coe"/>
+        <Attr Name="ImportTime" Val="1645188769"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/ad_da_vga/tri_256x8b_wave.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/tri_256x8b_wave.coe"/>
+        <Attr Name="ImportTime" Val="1645188769"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/clk_vip_0/clk_vip_0.xci">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/square_wave.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="hs_ad_da"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/ad_da_vga/hs_ad_da.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/hs_ad_da.xdc"/>
+        <Attr Name="ImportTime" Val="1596539550"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="ila_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="rom_256x8b"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="sawt_rom"/>
+  <BlockFileSet Type="BlockSrcs" Name="tri_rom"/>
+  <BlockFileSet Type="BlockSrcs" Name="vio_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="dis_ram"/>
+  <BlockFileSet Type="BlockSrcs" Name="ila_1"/>
+</GenRun>

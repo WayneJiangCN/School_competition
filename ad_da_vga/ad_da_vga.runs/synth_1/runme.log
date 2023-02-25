@@ -1,0 +1,763 @@
+
+*** Running vivado
+    with args -log hs_ad_da.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source hs_ad_da.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source hs_ad_da.tcl -notrace
+Command: synth_design -top hs_ad_da -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 27444 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 485.691 ; gain = 92.441
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'hs_ad_da' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/hs_ad_da.v:1]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_colorbar_top' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/hdmi_colorbar_top.v:24]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1/.Xil/Vivado-61404-DESKTOP-CRQ4OKO/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1/.Xil/Vivado-61404-DESKTOP-CRQ4OKO/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'video_driver' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/video_driver.v:24]
+	Parameter H_SYNC bound to: 11'b00000101000 
+	Parameter H_BACK bound to: 11'b00011011100 
+	Parameter H_DISP bound to: 11'b10100000000 
+	Parameter H_FRONT bound to: 11'b00001101110 
+	Parameter H_TOTAL bound to: 11'b11001110010 
+	Parameter V_SYNC bound to: 11'b00000000101 
+	Parameter V_BACK bound to: 11'b00000010100 
+	Parameter V_DISP bound to: 11'b01011010000 
+	Parameter V_FRONT bound to: 11'b00000000101 
+	Parameter V_TOTAL bound to: 11'b01011101110 
+INFO: [Synth 8-6155] done synthesizing module 'video_driver' (2#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/video_driver.v:24]
+INFO: [Synth 8-6157] synthesizing module 'video_display' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/video_display.v:24]
+	Parameter H_DISP bound to: 11'b10100000000 
+	Parameter V_DISP bound to: 11'b01011010000 
+INFO: [Synth 8-6157] synthesizing module 'dis_ram' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1/.Xil/Vivado-61404-DESKTOP-CRQ4OKO/realtime/dis_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dis_ram' (3#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1/.Xil/Vivado-61404-DESKTOP-CRQ4OKO/realtime/dis_ram_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'video_display' (4#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/video_display.v:24]
+INFO: [Synth 8-6157] synthesizing module 'dvi_transmitter_top' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/dvi_transmitter_top.v:24]
+INFO: [Synth 8-6157] synthesizing module 'asyn_rst_syn' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/asyn_rst_syn.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'asyn_rst_syn' (5#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/asyn_rst_syn.v:24]
+INFO: [Synth 8-6157] synthesizing module 'dvi_encoder' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/dvi_encoder.v:21]
+	Parameter CTRLTOKEN0 bound to: 10'b1101010100 
+	Parameter CTRLTOKEN1 bound to: 10'b0010101011 
+	Parameter CTRLTOKEN2 bound to: 10'b0101010100 
+	Parameter CTRLTOKEN3 bound to: 10'b1010101011 
+INFO: [Synth 8-6155] done synthesizing module 'dvi_encoder' (6#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/dvi_encoder.v:21]
+INFO: [Synth 8-6157] synthesizing module 'serializer_10_to_1' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/serializer_10_to_1.v:26]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:31227]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2' (7#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:31227]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2__parameterized0' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:31227]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter INIT_OQ bound to: 1'b0 
+	Parameter INIT_TQ bound to: 1'b0 
+	Parameter IS_CLKDIV_INVERTED bound to: 1'b0 
+	Parameter IS_CLK_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter IS_D3_INVERTED bound to: 1'b0 
+	Parameter IS_D4_INVERTED bound to: 1'b0 
+	Parameter IS_D5_INVERTED bound to: 1'b0 
+	Parameter IS_D6_INVERTED bound to: 1'b0 
+	Parameter IS_D7_INVERTED bound to: 1'b0 
+	Parameter IS_D8_INVERTED bound to: 1'b0 
+	Parameter IS_T1_INVERTED bound to: 1'b0 
+	Parameter IS_T2_INVERTED bound to: 1'b0 
+	Parameter IS_T3_INVERTED bound to: 1'b0 
+	Parameter IS_T4_INVERTED bound to: 1'b0 
+	Parameter SERDES_MODE bound to: SLAVE - type: string 
+	Parameter SRVAL_OQ bound to: 1'b0 
+	Parameter SRVAL_TQ bound to: 1'b0 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2__parameterized0' (7#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:31227]
+INFO: [Synth 8-6155] done synthesizing module 'serializer_10_to_1' (8#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/serializer_10_to_1.v:26]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:27289]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: TMDS_33 - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (9#1) [D:/Xilinx/Vivado/2018.2/scripts/rt/data/unisim_comp.v:27289]
+INFO: [Synth 8-6155] done synthesizing module 'dvi_transmitter_top' (10#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/dvi_transmitter_top.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_colorbar_top' (11#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/hdmi_colorbar_top.v:24]
+INFO: [Synth 8-6157] synthesizing module 'da_wave_send' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/da_wave_send.v:1]
+INFO: [Synth 8-6157] synthesizing module 'f_word_set' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/f_word_set.v:22]
+INFO: [Synth 8-6157] synthesizing module 'key_f' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/new/key_f.v:45]
+	Parameter CNT_MAX bound to: 20'b11110100001000111111 
+INFO: [Synth 8-6155] done synthesizing module 'key_f' (12#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/new/key_f.v:45]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/f_word_set.v:106]
+INFO: [Synth 8-6157] synthesizing module 'ila_1' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1/.Xil/Vivado-61404-DESKTOP-CRQ4OKO/realtime/ila_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_1' (13#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1/.Xil/Vivado-61404-DESKTOP-CRQ4OKO/realtime/ila_1_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_1'. This will prevent further optimization [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/f_word_set.v:106]
+INFO: [Synth 8-6155] done synthesizing module 'f_word_set' (14#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/f_word_set.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'da_wave_send' (15#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/da_wave_send.v:1]
+INFO: [Synth 8-6157] synthesizing module 'rom_part' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/rom_part.v:1]
+INFO: [Synth 8-6157] synthesizing module 'key_filter2' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/f_word_set.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'key_filter2' (16#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/f_word_set.v:1]
+INFO: [Synth 8-6157] synthesizing module 'rom_256x8b' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1/.Xil/Vivado-61404-DESKTOP-CRQ4OKO/realtime/rom_256x8b_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rom_256x8b' (17#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1/.Xil/Vivado-61404-DESKTOP-CRQ4OKO/realtime/rom_256x8b_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'sawt_rom' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1/.Xil/Vivado-61404-DESKTOP-CRQ4OKO/realtime/sawt_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sawt_rom' (18#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1/.Xil/Vivado-61404-DESKTOP-CRQ4OKO/realtime/sawt_rom_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'tri_rom' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1/.Xil/Vivado-61404-DESKTOP-CRQ4OKO/realtime/tri_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'tri_rom' (19#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1/.Xil/Vivado-61404-DESKTOP-CRQ4OKO/realtime/tri_rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rom_part' (20#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/rom_part.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ila_fre' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/new/ila_fre.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'ila_fre' (21#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/new/ila_fre.v:24]
+INFO: [Synth 8-6157] synthesizing module 'vio_0' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1/.Xil/Vivado-61404-DESKTOP-CRQ4OKO/realtime/vio_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'vio_0' (22#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1/.Xil/Vivado-61404-DESKTOP-CRQ4OKO/realtime/vio_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'vio_0' of module 'vio_0' requires 3 connections, but only 2 given [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/hs_ad_da.v:104]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/hs_ad_da.v:110]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1/.Xil/Vivado-61404-DESKTOP-CRQ4OKO/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (23#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1/.Xil/Vivado-61404-DESKTOP-CRQ4OKO/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio_0'. This will prevent further optimization [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/hs_ad_da.v:104]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ila_0'. This will prevent further optimization [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/hs_ad_da.v:110]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_hdmi_colorbar_top'. This will prevent further optimization [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/hs_ad_da.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'hs_ad_da' (24#1) [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/hs_ad_da.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 540.426 ; gain = 147.176
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 540.426 ; gain = 147.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 540.426 ; gain = 147.176
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_0'
+Finished Parsing XDC File [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'ila_0'
+Parsing XDC File [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/rom_256x8b/rom_256x8b/rom_256x8b_in_context.xdc] for cell 'u_rom_part/u_rom_256x8b'
+Finished Parsing XDC File [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/rom_256x8b/rom_256x8b/rom_256x8b_in_context.xdc] for cell 'u_rom_part/u_rom_256x8b'
+Parsing XDC File [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/tri_rom/tri_rom/tri_rom_in_context.xdc] for cell 'u_rom_part/u_tri_rom'
+Finished Parsing XDC File [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/tri_rom/tri_rom/tri_rom_in_context.xdc] for cell 'u_rom_part/u_tri_rom'
+Parsing XDC File [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/sawt_rom/sawt_rom/sawt_rom_in_context.xdc] for cell 'u_rom_part/u_sawt_rom'
+Finished Parsing XDC File [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/sawt_rom/sawt_rom/sawt_rom_in_context.xdc] for cell 'u_rom_part/u_sawt_rom'
+Parsing XDC File [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u_hdmi_colorbar_top/clk_wiz_0'
+Finished Parsing XDC File [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u_hdmi_colorbar_top/clk_wiz_0'
+Parsing XDC File [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/dis_ram/dis_ram/dis_ram_in_context.xdc] for cell 'u_hdmi_colorbar_top/u_video_display/u_dis_ram'
+Finished Parsing XDC File [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/dis_ram/dis_ram/dis_ram_in_context.xdc] for cell 'u_hdmi_colorbar_top/u_video_display/u_dis_ram'
+Parsing XDC File [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/vio_0/vio_0/vio_0_in_context.xdc] for cell 'vio_0'
+Finished Parsing XDC File [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/vio_0/vio_0/vio_0_in_context.xdc] for cell 'vio_0'
+Parsing XDC File [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/ila_1/ila_1/ila_1_in_context.xdc] for cell 'u_da_wave_send/u_f_word_set/ila_1'
+Finished Parsing XDC File [e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/ila_1/ila_1/ila_1_in_context.xdc] for cell 'u_da_wave_send/u_f_word_set/ila_1'
+Parsing XDC File [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/constrs_1/imports/ad_da_vga/hs_ad_da.xdc]
+WARNING: [Constraints 18-619] A clock with name 'sys_clk' already exists, overwriting the previous clock with the same name. [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/constrs_1/imports/ad_da_vga/hs_ad_da.xdc:4]
+Finished Parsing XDC File [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/constrs_1/imports/ad_da_vga/hs_ad_da.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/constrs_1/imports/ad_da_vga/hs_ad_da.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/hs_ad_da_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/hs_ad_da_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 881.727 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'u_hdmi_colorbar_top/u_video_display/u_dis_ram' at clock pin 'clkb' is different from the actual clock period '13.474', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 881.727 ; gain = 488.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 881.727 ; gain = 488.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clk. (constraint file  e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clk. (constraint file  e:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property DONT_TOUCH = true for ila_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_rom_part/u_rom_256x8b. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_rom_part/u_tri_rom. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_rom_part/u_sawt_rom. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_hdmi_colorbar_top/clk_wiz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_hdmi_colorbar_top/u_video_display/u_dis_ram. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for vio_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_da_wave_send/u_f_word_set/ila_1. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 881.727 ; gain = 488.477
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "cnt_v" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/dvi_encoder.v:125]
+INFO: [Synth 8-5546] ROM "key_flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "FREQ_CTRL" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'key_filter2'
+INFO: [Synth 8-5544] ROM "pedge_key" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nedge_key" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nedge_key" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "ad_clk" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE1 |                               00 |                               00
+                  iSTATE |                               01 |                               01
+                 iSTATE2 |                               10 |                               10
+                 iSTATE0 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'key_filter2'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 881.727 ; gain = 488.477
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     20 Bit       Adders := 3     
+	   2 Input     13 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 4     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 2     
+	   5 Input      5 Bit       Adders := 6     
+	   4 Input      5 Bit       Adders := 3     
+	   2 Input      5 Bit       Adders := 2     
+	   8 Input      4 Bit       Adders := 6     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 42    
++---Registers : 
+	               20 Bit    Registers := 3     
+	               13 Bit    Registers := 1     
+	               11 Bit    Registers := 3     
+	               10 Bit    Registers := 4     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 5     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 9     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 27    
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   3 Input     24 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 7     
+	   4 Input     20 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 5     
+	   5 Input     10 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 6     
+	   2 Input      8 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 16    
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 8     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 31    
+	   4 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module video_driver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module video_display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     24 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module asyn_rst_syn 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module dvi_encoder 
+Detailed RTL Component Info : 
++---Adders : 
+	   5 Input      5 Bit       Adders := 2     
+	   4 Input      5 Bit       Adders := 1     
+	   8 Input      4 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 14    
++---Registers : 
+	               10 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   5 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+Module key_f 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module f_word_set 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 4     
+Module da_wave_send 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module key_filter2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 3     
+	   4 Input     20 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 7     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 8     
+Module rom_part 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module ila_fre 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 1     
++---Registers : 
+	               13 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'u_rgb2dvi_0/encoder_g/de_q_reg' into 'u_rgb2dvi_0/encoder_b/de_q_reg' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/dvi_encoder.v:99]
+INFO: [Synth 8-4471] merging register 'u_rgb2dvi_0/encoder_g/de_reg_reg' into 'u_rgb2dvi_0/encoder_b/de_reg_reg' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/dvi_encoder.v:100]
+INFO: [Synth 8-4471] merging register 'u_rgb2dvi_0/encoder_g/c1_q_reg' into 'u_rgb2dvi_0/encoder_g/c0_q_reg' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/dvi_encoder.v:104]
+INFO: [Synth 8-4471] merging register 'u_rgb2dvi_0/encoder_g/c1_reg_reg' into 'u_rgb2dvi_0/encoder_g/c0_reg_reg' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/dvi_encoder.v:105]
+INFO: [Synth 8-4471] merging register 'u_rgb2dvi_0/encoder_r/de_q_reg' into 'u_rgb2dvi_0/encoder_b/de_q_reg' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/dvi_encoder.v:99]
+INFO: [Synth 8-4471] merging register 'u_rgb2dvi_0/encoder_r/de_reg_reg' into 'u_rgb2dvi_0/encoder_b/de_reg_reg' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/dvi_encoder.v:100]
+INFO: [Synth 8-4471] merging register 'u_rgb2dvi_0/encoder_r/c0_q_reg' into 'u_rgb2dvi_0/encoder_g/c0_q_reg' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/dvi_encoder.v:102]
+INFO: [Synth 8-4471] merging register 'u_rgb2dvi_0/encoder_r/c0_reg_reg' into 'u_rgb2dvi_0/encoder_g/c0_reg_reg' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/dvi_encoder.v:103]
+INFO: [Synth 8-4471] merging register 'u_rgb2dvi_0/encoder_r/c1_q_reg' into 'u_rgb2dvi_0/encoder_g/c0_q_reg' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/dvi_encoder.v:104]
+INFO: [Synth 8-4471] merging register 'u_rgb2dvi_0/encoder_r/c1_reg_reg' into 'u_rgb2dvi_0/encoder_g/c0_reg_reg' [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/dvi_encoder.v:105]
+WARNING: [Synth 8-6014] Unused sequential element u_rgb2dvi_0/encoder_g/de_q_reg was removed.  [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/dvi_encoder.v:99]
+WARNING: [Synth 8-6014] Unused sequential element u_rgb2dvi_0/encoder_g/de_reg_reg was removed.  [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/dvi_encoder.v:100]
+WARNING: [Synth 8-6014] Unused sequential element u_rgb2dvi_0/encoder_g/c1_q_reg was removed.  [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/dvi_encoder.v:104]
+WARNING: [Synth 8-6014] Unused sequential element u_rgb2dvi_0/encoder_g/c1_reg_reg was removed.  [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/dvi_encoder.v:105]
+WARNING: [Synth 8-6014] Unused sequential element u_rgb2dvi_0/encoder_r/de_q_reg was removed.  [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/dvi_encoder.v:99]
+WARNING: [Synth 8-6014] Unused sequential element u_rgb2dvi_0/encoder_r/de_reg_reg was removed.  [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/dvi_encoder.v:100]
+WARNING: [Synth 8-6014] Unused sequential element u_rgb2dvi_0/encoder_r/c0_q_reg was removed.  [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/dvi_encoder.v:102]
+WARNING: [Synth 8-6014] Unused sequential element u_rgb2dvi_0/encoder_r/c0_reg_reg was removed.  [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/dvi_encoder.v:103]
+WARNING: [Synth 8-6014] Unused sequential element u_rgb2dvi_0/encoder_r/c1_q_reg was removed.  [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/dvi_encoder.v:104]
+WARNING: [Synth 8-6014] Unused sequential element u_rgb2dvi_0/encoder_r/c1_reg_reg was removed.  [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/dvi_encoder.v:105]
+INFO: [Synth 8-5546] ROM "u_video_driver/cnt_v" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fword_key_add/key_flag" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fword_key_sub/key_flag" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element u_rom_part/u_key_filter/Key_R_Flag_reg was removed.  [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/f_word_set.v:37]
+WARNING: [Synth 8-6014] Unused sequential element u_rom_part/u_key_filter/Key_State_reg was removed.  [E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/imports/ad_da_vga/ad_da_vga.srcs/f_word_set.v:39]
+INFO: [Synth 8-5546] ROM "u_ad_wave_rec/ad_clk" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/din_q_reg[7]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/n1d_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/din_q_reg[6]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/n1d_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/din_q_reg[5]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n1d_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/din_q_reg[4]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/n1d_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/din_q_reg[3]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/n1d_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/din_q_reg[2]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/n1d_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/din_q_reg[1]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n1d_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/n1d_reg[0]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n1d_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/n1d_reg[3]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n1d_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/n1d_reg[1]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/n1d_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/n1d_reg[2]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/din_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/din_q_reg[0]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n1d_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/din_q_reg[7]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/din_q_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/din_q_reg[6]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/din_q_reg[4]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/din_q_reg[5]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/din_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/din_q_reg[4]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/din_q_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/din_q_reg[3]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/din_q_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/din_q_reg[2]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/din_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/din_q_reg[7]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n1d_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/din_q_reg[6]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n1d_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/din_q_reg[5]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n1d_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/din_q_reg[4]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n1d_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/din_q_reg[3]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n1d_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/din_q_reg[2]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n1d_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/din_q_reg[1]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n1d_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n1d_reg[0]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n1d_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n1d_reg[3]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/c0_q_reg'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n1d_reg[1]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n1d_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n1d_reg[2]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/din_q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_hdmi_colorbar_top/\u_rgb2dvi_0/encoder_g/c0_q_reg )
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/q_m_reg_reg[0]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/q_m_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/n0q_m_reg[0]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/n1q_m_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/n0q_m_reg[0]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/n1q_m_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n0q_m_reg[0]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n1q_m_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/c0_reg_reg' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/c0_q_reg'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/n1q_m_reg[0]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n0q_m_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n1q_m_reg[0]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n0q_m_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/q_m_reg_reg[7]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/n0q_m_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/q_m_reg_reg[6]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/n0q_m_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/q_m_reg_reg[5]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/n0q_m_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/q_m_reg_reg[4]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n0q_m_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/q_m_reg_reg[3]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n0q_m_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/q_m_reg_reg[2]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n0q_m_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/q_m_reg_reg[1]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n0q_m_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/q_m_reg_reg[8]' (FDR) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/q_m_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/n0q_m_reg[3]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n0q_m_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/n1q_m_reg[3]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n0q_m_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/n0q_m_reg[1]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n0q_m_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/n1q_m_reg[1]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n0q_m_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/n0q_m_reg[2]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/n1q_m_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/n1q_m_reg[2]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n0q_m_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/q_m_reg_reg[7]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n0q_m_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/q_m_reg_reg[6]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n0q_m_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/q_m_reg_reg[5]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n0q_m_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/q_m_reg_reg[4]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n0q_m_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/q_m_reg_reg[3]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n0q_m_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/q_m_reg_reg[2]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n0q_m_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/q_m_reg_reg[1]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n0q_m_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/q_m_reg_reg[0]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n0q_m_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n1q_m_reg[3]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n0q_m_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n0q_m_reg[1]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n1q_m_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n1q_m_reg[1]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/c0_q_reg'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n0q_m_reg[2]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/n1q_m_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_hdmi_colorbar_top/\u_rgb2dvi_0/encoder_g/c0_q_reg )
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/dout_reg[7]' (FDC) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/dout_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/dout_reg[5]' (FDC) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/dout_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/dout_reg[4]' (FDC) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/dout_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/dout_reg[3]' (FDC) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_b/dout_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/dout_reg[7]' (FDC) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/dout_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/dout_reg[5]' (FDC) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/dout_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/dout_reg[4]' (FDC) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/dout_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/dout_reg[3]' (FDC) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/dout_reg[1]'
+WARNING: [Synth 8-3332] Sequential element (u_rgb2dvi_0/encoder_b/cnt_reg[0]) is unused and will be removed from module hdmi_colorbar_top.
+WARNING: [Synth 8-3332] Sequential element (u_rgb2dvi_0/encoder_g/cnt_reg[0]) is unused and will be removed from module hdmi_colorbar_top.
+WARNING: [Synth 8-3332] Sequential element (u_rgb2dvi_0/encoder_g/c0_q_reg) is unused and will be removed from module hdmi_colorbar_top.
+WARNING: [Synth 8-3332] Sequential element (u_rgb2dvi_0/encoder_r/cnt_reg[0]) is unused and will be removed from module hdmi_colorbar_top.
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/n1d_reg[0]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/n0q_m_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/n1d_reg[1]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/n1d_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/n1d_reg[3]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/din_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/n1d_reg[2]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/din_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/n1q_m_reg[1]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/n0q_m_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_hdmi_colorbar_top/\u_rgb2dvi_0/encoder_g/n0q_m_reg[1] )
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/dout_reg[9]' (FDC) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_r/dout_reg[2]'
+WARNING: [Synth 8-3332] Sequential element (u_rgb2dvi_0/encoder_g/n1q_m_reg[0]) is unused and will be removed from module hdmi_colorbar_top.
+WARNING: [Synth 8-3332] Sequential element (u_rgb2dvi_0/encoder_g/n0q_m_reg[1]) is unused and will be removed from module hdmi_colorbar_top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 881.727 ; gain = 488.477
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u_hdmi_colorbar_top/clk_wiz_0/clk_out1' to pin 'u_hdmi_colorbar_top/clk_wiz_0/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'u_hdmi_colorbar_top/clk_wiz_0/clk_out2' to pin 'u_hdmi_colorbar_top/clk_wiz_0/bbstub_clk_out2/O'
+WARNING: [Synth 8-565] redefining clock 'sys_clk'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 881.727 ; gain = 488.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 898.840 ; gain = 505.590
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/q_m_reg_reg[7]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/q_m_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/q_m_reg_reg[6]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/q_m_reg_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/q_m_reg_reg[4]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/q_m_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/q_m_reg_reg[3]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/q_m_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/n1q_m_reg[2]' (FD) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/n0q_m_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/dout_reg[7]' (FDC) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/dout_reg[5]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/dout_reg[4]' (FDC) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/dout_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/dout_reg[3]' (FDC) to 'u_hdmi_colorbar_top/u_rgb2dvi_0/encoder_g/dout_reg[1]'
+WARNING: [Synth 8-3332] Sequential element (u_rgb2dvi_0/encoder_g/n0q_m_reg[2]) is unused and will be removed from module hdmi_colorbar_top.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 906.809 ; gain = 513.559
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module vio_0 has unconnected pin probe_in0[0]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 906.809 ; gain = 513.559
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 906.809 ; gain = 513.559
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 906.809 ; gain = 513.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 906.809 ; gain = 513.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 906.809 ; gain = 513.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 906.809 ; gain = 513.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |dis_ram       |         1|
+|3     |vio_0         |         1|
+|4     |ila_0         |         1|
+|5     |ila_1         |         1|
+|6     |rom_256x8b    |         1|
+|7     |sawt_rom      |         1|
+|8     |tri_rom       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |clk_wiz_0   |     1|
+|2     |dis_ram     |     1|
+|3     |ila_0       |     1|
+|4     |ila_1       |     1|
+|5     |rom_256x8b  |     1|
+|6     |sawt_rom    |     1|
+|7     |tri_rom     |     1|
+|8     |vio_0       |     1|
+|9     |CARRY4      |    40|
+|10    |LUT1        |    10|
+|11    |LUT2        |    80|
+|12    |LUT3        |    59|
+|13    |LUT4        |    49|
+|14    |LUT5        |    78|
+|15    |LUT6        |   150|
+|16    |MUXF7       |     1|
+|17    |OSERDESE2   |     4|
+|18    |OSERDESE2_1 |     4|
+|19    |FDCE        |   180|
+|20    |FDPE        |     9|
+|21    |FDRE        |    44|
+|22    |IBUF        |    13|
+|23    |OBUF        |    11|
+|24    |OBUFDS      |     4|
++------+------------+------+
+
+Report Instance Areas: 
++------+----------------------+---------------------+------+
+|      |Instance              |Module               |Cells |
++------+----------------------+---------------------+------+
+|1     |top                   |                     |   787|
+|2     |  u_hdmi_colorbar_top |hdmi_colorbar_top    |   311|
+|3     |    u_rgb2dvi_0       |dvi_transmitter_top  |   120|
+|4     |      encoder_b       |dvi_encoder          |    32|
+|5     |      encoder_g       |dvi_encoder_1        |    43|
+|6     |      encoder_r       |dvi_encoder_2        |    30|
+|7     |      reset_syn       |asyn_rst_syn         |     3|
+|8     |      serializer_b    |serializer_10_to_1   |     2|
+|9     |      serializer_clk  |serializer_10_to_1_3 |     2|
+|10    |      serializer_g    |serializer_10_to_1_4 |     2|
+|11    |      serializer_r    |serializer_10_to_1_5 |     2|
+|12    |    u_video_display   |video_display        |    84|
+|13    |    u_video_driver    |video_driver         |   104|
+|14    |  u_ad_wave_rec       |ila_fre              |    33|
+|15    |  u_da_wave_send      |da_wave_send         |   182|
+|16    |    u_f_word_set      |f_word_set           |   143|
+|17    |      fword_key_add   |key_f                |    59|
+|18    |      fword_key_sub   |key_f_0              |    57|
+|19    |  u_rom_part          |rom_part             |   100|
+|20    |    u_key_filter      |key_filter2          |    64|
++------+----------------------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 906.809 ; gain = 513.559
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 20 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 906.809 ; gain = 172.258
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 906.809 ; gain = 513.559
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 58 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+185 Infos, 25 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 906.809 ; gain = 515.289
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1/hs_ad_da.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file hs_ad_da_utilization_synth.rpt -pb hs_ad_da_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 906.809 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Feb 25 16:44:05 2023...

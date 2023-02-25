@@ -1,0 +1,77 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Feb 25 16:35:16 2023
+# Process ID: 28856
+# Current directory: E:/Downloads/ad_da_hdmi-master/ad_da_vga
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent60456 E:\Downloads\ad_da_hdmi-master\ad_da_vga\ad_da_vga.xpr
+# Log file: E:/Downloads/ad_da_hdmi-master/ad_da_vga/vivado.log
+# Journal file: E:/Downloads/ad_da_hdmi-master/ad_da_vga\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 943.848 ; gain = 190.176
+update_compile_order -fileset sources_1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/Downloads/ad_da_hdmi-master/ad_da_vga/square_wave.coe' provided. It will be converted relative to IP Instance files '../../../../square_wave.coe'
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/Downloads/ad_da_hdmi-master/ad_da_vga/square_wave.coe' provided. It will be converted relative to IP Instance files '../../../../square_wave.coe'
+set_property -dict [list CONFIG.Coe_File {E:/Downloads/ad_da_hdmi-master/ad_da_vga/square_wave.coe}] [get_ips sawt_rom]
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/Downloads/ad_da_hdmi-master/ad_da_vga/square_wave.coe' provided. It will be converted relative to IP Instance files '../../../../square_wave.coe'
+generate_target all [get_files  E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/sawt_rom/sawt_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'sawt_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'sawt_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'sawt_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'sawt_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'sawt_rom'...
+catch { config_ip_cache -export [get_ips -all sawt_rom] }
+export_ip_user_files -of_objects [get_files E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/sawt_rom/sawt_rom.xci] -no_script -sync -force -quiet
+reset_run sawt_rom_synth_1
+launch_runs -jobs 8 sawt_rom_synth_1
+[Sat Feb 25 16:42:12 2023] Launched sawt_rom_synth_1...
+Run output will be captured here: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/sawt_rom_synth_1/runme.log
+export_simulation -of_objects [get_files E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.srcs/sources_1/ip/sawt_rom/sawt_rom.xci] -directory E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.ip_user_files/sim_scripts -ip_user_files_dir E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.ip_user_files -ipstatic_source_dir E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.cache/compile_simlib/modelsim} {questa=E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.cache/compile_simlib/questa} {riviera=E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.cache/compile_simlib/riviera} {activehdl=E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1
+
+launch_runs impl_2 -to_step write_bitstream -jobs 8
+[Sat Feb 25 16:43:10 2023] Launched sawt_rom_synth_1, synth_1...
+Run output will be captured here:
+sawt_rom_synth_1: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/sawt_rom_synth_1/runme.log
+synth_1: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/synth_1/runme.log
+[Sat Feb 25 16:43:10 2023] Launched impl_2...
+Run output will be captured here: E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210512180081
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210512180081.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.runs/impl_2/hs_ad_da.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 2 ILA core(s).
+INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"ila_0"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"u_da_wave_send/u_f_word_set/ila_1"}]]
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.hw/backup/hw_ila_data_2.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+save_wave_config {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+save_wave_config {E:/Downloads/ad_da_hdmi-master/ad_da_vga/ad_da_vga.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Feb 25 16:50:27 2023...

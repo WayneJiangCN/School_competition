@@ -1,0 +1,17 @@
+$date
+        2023-Feb-24 11:41:46
+$end
+$version
+        Vivado v2018.2 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 1 " ad_otr $end
+$var reg 8 # da_data_OBUF [7:0] $end
+$var reg 1 + _TRIGGER $end
+$var reg 1 , _WINDOW $end
+$var reg 1 - _GAP $end
+$upscope $end
+$enddefinitions $end
